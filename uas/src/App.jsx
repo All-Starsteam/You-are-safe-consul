@@ -1,9 +1,8 @@
-import './index.css'
+import "./App.css";
 
 function App() {
   return (
-    <div >
-      
+    <div>
       <h1>All stars starts not here</h1>
     </div>
   );
