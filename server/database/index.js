@@ -24,4 +24,4 @@ let save = (repo) => {
 };
 let post = mongoose.model("posts", postSchema);
 
-module.exports = {post,save};
+module.exports = post;
