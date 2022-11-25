@@ -1,7 +1,7 @@
 {
     username:{type:string,default:annonymous,require false,},
     topic:string ,
-    ip-adresse:number,
+    ipAdresse:string,
     content:string,
     placement:string
 }
