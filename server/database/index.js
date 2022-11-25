@@ -6,6 +6,8 @@ mongoose
   })
   .then((res) => console.log("database connected"))
   .catch((err) => console.log(err));
+  
+  mongoose.Promise = global.Promise;
 
 let postSchema = mongoose.Schema({
     username:{type:String,default:'annonymous',require :false,},

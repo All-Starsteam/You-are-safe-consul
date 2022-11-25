@@ -14,7 +14,17 @@ app.post("/uas", (req, res) => {
      res.json("post");
 
 });
-
+app.get("/api/posts",   (req, res) => {
+    post.find({}, (err, result) => {
+        
+        if (err) {
+          res.json(err);
+        } else {
+          res.json(result);
+        }
+      });
+    });
+    
 app.listen(PORT,()=>{
     console.log(`server connected to localhost:${PORT}`)
 })
