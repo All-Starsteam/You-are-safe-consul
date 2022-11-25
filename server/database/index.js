@@ -1,18 +1,18 @@
 const mongoose = require("mongoose");
 mongoose
-  .connect("", {
+  .connect("mongodb+srv://root:root@uas.qyf1n9v.mongodb.net/UAS", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
   .then((res) => console.log("conected "))
   .catch((err) => console.log(err));
 
-let repoSchema = mongoose.Schema({
-    username:{type:string,default:'annonymous',require :false,},
-    topic:string ,
+let postSchema = mongoose.Schema({
+    username:{type:String,default:'annonymous',require :false,},
+    topic:String ,
     ipAdresse:String,
-    content:string,
-    placement:string
+    content:String,
+    placement:String
 });
 let save = (repo) => {
   Repo.create(repo).then(
@@ -20,6 +20,6 @@ let save = (repo) => {
   ).catch(err=>console.log(err))
   
 };
-let Repo = mongoose.model("Repo", repoSchema);
+let post = mongoose.model("posts", postSchema);
 
-module.exports = {Repo,save};
+module.exports = {post,save};
