@@ -1,10 +1,10 @@
-import './App.css';
+import './index.css'
 
 function App() {
   return (
     <div >
       
-      <h1>All stars starts here</h1>
+      <h1>All stars starts not here</h1>
     </div>
   );
 }
