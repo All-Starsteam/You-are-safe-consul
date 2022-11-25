@@ -4,7 +4,7 @@ mongoose
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
-  .then((res) => console.log("conected "))
+  .then((res) => console.log("database connected"))
   .catch((err) => console.log(err));
 
 let postSchema = mongoose.Schema({
