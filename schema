@@ -1,0 +1,7 @@
+{
+    username:{type:string,default:annonymous,require false,},
+    topic:string ,
+    ipAdresse:string,
+    content:string,
+    placement:string
+}
