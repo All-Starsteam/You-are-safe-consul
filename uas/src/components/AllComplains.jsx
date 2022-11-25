@@ -1,13 +1,13 @@
 import React from "react";
-import ComplainDetails from "./ComplainDetails"
+import ComplainDetails from "./ComplainDetails.jsx"
 
-const AllComplains = ({data}) => {
+const AllComplains = (props) => {
   
-    console.log({data})
+    console.log(props.data)
     
    return ( 
      <> 
-   {data.map((e,i)=>(
+   {props.data.map((e,i)=>(
      
      <ComplainDetails data={e} key={i} />
     
