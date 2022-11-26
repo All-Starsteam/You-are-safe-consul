@@ -36,6 +36,7 @@ const Topics = [
   "Racism/Sexism",
   "Sexual Violence",
   "Domestic Violence ",
+  "rape","harrassment","Violence"
 ];
 
       return (

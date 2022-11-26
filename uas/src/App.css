@@ -3,11 +3,13 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
-  }
-  body {
+}
+
+body {
     background-color: #fdfdfd;
-  }
-  .wrappers {
+}
+
+.wrappers {
     width: 80vw;
     transform: translate(-50%, -50%);
     top: 50%;
@@ -17,8 +19,9 @@
     gap: 10px;
     margin-top: 150px;
     margin-left: 320px;
-  }
-  .container {
+}
+
+.container {
     width: 28vmin;
     height: 28vmin;
     display: flex;
@@ -29,78 +32,92 @@
     font-size: 16px;
     border-radius: 0.5em;
     background-color: #f2f2f2;
-   
-  }
-  i {
+
+}
+
+i {
     color: #18f98f;
     font-size: 2.5em;
     text-align: center;
-  }
-  span.num {
+}
+
+span.num {
     color: #000000;
     display: grid;
     place-items: center;
     font-weight: 600;
     font-size: 3em;
-  }
-  span.text {
+}
+
+span.text {
     color: #000000;
     font-size: 1em;
     text-align: center;
     pad: 0.7em 0;
     font-weight: 400;
     line-height: 0;
-  }
-  @media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 1024px) {
     .wrappers {
-      width: 85vw;
+        width: 85vw;
     }
+
     .container {
-      height: 26vmin;
-      width: 26vmin;
-      font-size: 12px;
+        height: 26vmin;
+        width: 26vmin;
+        font-size: 12px;
     }
-  }
-  @media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 768px) {
     .wrappers {
-      width: 90vw;
-      flex-wrap: wrap;
-      gap: 30px;
+        width: 90vw;
+        flex-wrap: wrap;
+        gap: 30px;
     }
+
     .container {
-      width: calc(50% - 40px);
-      height: 30vmin;
-      font-size: 14px;
+        width: calc(50% - 40px);
+        height: 30vmin;
+        font-size: 14px;
     }
-  }
-  @media screen and (max-width: 480px) {
+}
+
+@media screen and (max-width: 480px) {
     .wrappers {
-      gap: 15px;
+        gap: 15px;
     }
+
     .container {
-      width: 100%;
-      height: 25vmin;
-      font-size: 8px;
+        width: 100%;
+        height: 25vmin;
+        font-size: 8px;
     }
-  }
+}
+
 .top-links>:first-child {
     -webkit-box-flex: 1;
     -webkit-flex-grow: 1;
     -ms-flex-positive: 1;
     flex-grow: 1;
 }
+
 .locale {
     margin-bottom: 0.375rem;
     margin-top: 0.375rem;
     position: relative;
 }
-div{
+
+div {
     margin: 0;
     padding: 0;
 }
+
 div {
     display: block;
 }
+
 .top-links {
     background: #002d50;
     color: #fdfdfd;
@@ -113,6 +130,7 @@ div {
     flex-wrap: wrap;
     font-size: 0.875rem;
 }
+
 body {
     display: -webkit-box;
     display: -webkit-flex;
@@ -126,6 +144,7 @@ body {
     font-size: 1.0625rem;
     min-height: 100%;
 }
+
 body {
     margin: 0;
     padding: 0;
@@ -137,32 +156,42 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
 html {
     font-size: calc(0.25em + Max(0.75em, 0.75vw));
 }
 
-*::selection, * *::selection {
+*::selection,
+* *::selection {
     background-color: #004a83;
     color: #fdfdfd;
 }
+
 .public>.wrapper>header .top-bar {
     background-color: #004a83;
     color: #fdfdfd;
 }
-.public>.wrapper>header .top-bar    {
+
+.public>.wrapper>header .top-bar {
     background-color: #004a83;
     color: #fdfdfd;
 }
-.public>.wrapper>header>*, .proposal-dashboard>header>* {
+
+.public>.wrapper>header>*,
+.proposal-dashboard>header>* {
     position: relative;
 }
+
 .top-bar {
     background-color: inherit;
     padding: 0;
 }
-.top-bar, .top-bar ul {
+
+.top-bar,
+.top-bar ul {
     background-color: #e6e6e6;
 }
+
 .top-bar {
     display: -webkit-box;
     display: -webkit-flex;
@@ -184,17 +213,23 @@ html {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
+
 div {
     margin: 0;
     padding: 0;
 }
-*, *::before, *::after {
+
+*,
+*::before,
+*::after {
     -webkit-box-sizing: inherit;
     box-sizing: inherit;
 }
+
 div {
     display: block;
 }
+
 body {
     display: -webkit-box;
     display: -webkit-flex;
@@ -208,6 +243,7 @@ body {
     font-size: 1.0625rem;
     min-height: 100%;
 }
+
 body {
     margin: 0;
     padding: 0;
@@ -219,16 +255,19 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
 html {
     font-size: calc(0.25em + Max(0.75em, 0.75vw));
 }
+
 html {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     font-size: 100%;
 }
 
-.public>.wrapper>header>*::before, .proposal-dashboard>header>*::before {
+.public>.wrapper>header>*::before,
+.proposal-dashboard>header>*::before {
     bottom: 0;
     content: "";
     display: block;
@@ -242,55 +281,93 @@ html {
     background: inherit;
     z-index: -1;
 }
-*, *::before, *::after {
+
+*,
+*::before,
+*::after {
     -webkit-box-sizing: inherit;
     box-sizing: inherit;
 }
-*, *::before, *::after {
+
+*,
+*::before,
+*::after {
     -webkit-box-sizing: inherit;
     box-sizing: inherit;
 }
-.public>.wrapper>header .top-bar::selection{
-    background-color: rgba(253,253,253,0.99);
-    color: #004a83;
-}
-.public>.wrapper>header .top-bar::selection{
-    background-color: rgba(253,253,253,0.99);
-    color: #004a83;
-}
+
 .public>.wrapper>header .top-bar::selection {
-    background-color: rgba(253,253,253,0.99);
+    background-color: rgba(253, 253, 253, 0.99);
     color: #004a83;
 }
-*::selection, * *::selection {
+
+.public>.wrapper>header .top-bar::selection {
+    background-color: rgba(253, 253, 253, 0.99);
+    color: #004a83;
+}
+
+.public>.wrapper>header .top-bar::selection {
+    background-color: rgba(253, 253, 253, 0.99);
+    color: #004a83;
+}
+
+*::selection,
+* *::selection {
     background-color: #004a83;
     color: #fdfdfd;
 }
-element.style {
-}
+
+element.style {}
+
 .subnavigation ul {
     list-style-type: none;
     margin: 0;
 }
+
 ul {
     margin-left: 1.25rem;
     list-style-type: disc;
 }
-ul, ol, dl {
+
+ul,
+ol,
+dl {
     margin-bottom: 1rem;
     list-style-position: outside;
     line-height: 1.6;
 }
-div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, th, td {
+
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+p,
+blockquote,
+th,
+td {
     margin: 0;
     padding: 0;
 }
-*, *::before, *::after {
+
+*,
+*::before,
+*::after {
     -webkit-box-sizing: inherit;
     box-sizing: inherit;
 }
-user agent stylesheet
-ul {
+
+user agent stylesheet ul {
     display: block;
     list-style-type: disc;
     margin-block-start: 1em;
@@ -299,7 +376,7 @@ ul {
     margin-inline-end: 0px;
     padding-inline-start: 40px;
 }
- 
+
 .subnavigation {
     background: #fdfdfd;
     color: #222;
@@ -310,6 +387,7 @@ ul {
     flex-direction: row;
     padding-bottom: 0;
 }
+
 .subnavigation {
     display: -webkit-box;
     display: -webkit-flex;
@@ -321,6 +399,7 @@ ul {
     -ms-flex-direction: column;
     flex-direction: column;
 }
+
 body {
     display: -webkit-box;
     display: -webkit-flex;
@@ -334,6 +413,7 @@ body {
     font-size: 1.0625rem;
     min-height: 100%;
 }
+
 body {
     margin: 0;
     padding: 0;
@@ -345,24 +425,33 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
 html {
     font-size: calc(0.25em + Max(0.75em, 0.75vw));
 }
+
 html {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     font-size: 100%;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     -webkit-box-sizing: inherit;
     box-sizing: inherit;
 }
-*, *::before, *::after {
+
+*,
+*::before,
+*::after {
     -webkit-box-sizing: inherit;
     box-sizing: inherit;
 }
-*::selection, * *::selection {
+
+*::selection,
+* *::selection {
     background-color: #004a83;
     color: #fdfdfd;
 }
@@ -374,9 +463,11 @@ html {
     margin: 0;
     width: auto;
 }
+
 a img {
     border: 0;
 }
+
 img {
     display: inline-block;
     vertical-align: middle;
@@ -384,69 +475,164 @@ img {
     height: auto;
     -ms-interpolation-mode: bicubic;
 }
+
 img {
     border-style: none;
 }
-*, *::before, *::after {
+
+*,
+*::before,
+*::after {
     -webkit-box-sizing: inherit;
     box-sizing: inherit;
 }
+
 a {
     color: #004a83;
 }
+
 a {
     line-height: inherit;
     color: #1779ba;
     text-decoration: none;
     cursor: pointer;
 }
-user agent stylesheet
-a:-webkit-any-link {
+
+user agent stylesheet a:-webkit-any-link {
     color: -webkit-link;
     cursor: pointer;
 }
+
 .top-bar .top-bar-title {
     line-height: 1.5rem;
     margin-right: 0;
 }
-h1, h2, h3, h4, h5, h6 {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     clear: both;
     font-weight: 700;
 }
-h1, .h1 {
+
+h1,
+.h1 {
     font-size: 2.125rem;
     line-height: 1.4;
     margin-top: 0;
     margin-bottom: 0.5rem;
 }
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
     font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif !important;
     font-style: normal;
     font-weight: normal;
     color: inherit;
     text-rendering: optimizeLegibility;
 }
+
 h1 {
     font-size: 2em;
     margin: 0.67em 0;
 }
-user agent stylesheet
-h1 {
+
+user agent stylesheet h1 {
     font-size: 2em;
     font-weight: bold;
 }
-.budget-phases .tabs-controls .budget-prev-phase, .budget-phases .tabs-controls .budget-next-phase, .budget-phases .tabs-controls .budget-prev-phase-disabled, .budget-phases .tabs-controls .budget-next-phase-disabled, .debate-questions .quiz-header .quiz-next:hover, .debate-questions .quiz-header .quiz-next:active, .jumbo-budget .button, .categories a:hover, .categories a.is-active, .geozone a:hover, .geozone a.is-active, .public>.wrapper>header .top-bar, .proposal-dashboard>header .top-bar, .pagination .current, .ui-datepicker-calendar .ui-state-hover, .ui-datepicker-calendar .ui-state-active, .ui-datepicker-header, .budgets-index>header, .budget-group-show>header, .budget-groups-index>header, .budget-ballot-show>header, .budget-header {
+
+.budget-phases .tabs-controls .budget-prev-phase,
+.budget-phases .tabs-controls .budget-next-phase,
+.budget-phases .tabs-controls .budget-prev-phase-disabled,
+.budget-phases .tabs-controls .budget-next-phase-disabled,
+.debate-questions .quiz-header .quiz-next:hover,
+.debate-questions .quiz-header .quiz-next:active,
+.jumbo-budget .button,
+.categories a:hover,
+.categories a.is-active,
+.geozone a:hover,
+.geozone a.is-active,
+.public>.wrapper>header .top-bar,
+.proposal-dashboard>header .top-bar,
+.pagination .current,
+.ui-datepicker-calendar .ui-state-hover,
+.ui-datepicker-calendar .ui-state-active,
+.ui-datepicker-header,
+.budgets-index>header,
+.budget-group-show>header,
+.budget-groups-index>header,
+.budget-ballot-show>header,
+.budget-header {
     background-color: #004a83;
     color: #fdfdfd;
 }
-.budget-phases .tabs-controls .budget-prev-phase, .budget-phases .tabs-controls .budget-next-phase, .budget-phases .tabs-controls .budget-prev-phase-disabled, .budget-phases .tabs-controls .budget-next-phase-disabled, .debate-questions .quiz-header .quiz-next:hover, .debate-questions .quiz-header .quiz-next:active, .jumbo-budget .button, .categories a:hover, .categories a.is-active, .geozone a:hover, .geozone a.is-active, .public>.wrapper>header .top-bar, .proposal-dashboard>header .top-bar, .pagination .current, .ui-datepicker-calendar .ui-state-hover, .ui-datepicker-calendar .ui-state-active, .ui-datepicker-header, .budgets-index>header, .budget-group-show>header, .budget-groups-index>header, .budget-ballot-show>header, .budget-header {
+
+.budget-phases .tabs-controls .budget-prev-phase,
+.budget-phases .tabs-controls .budget-next-phase,
+.budget-phases .tabs-controls .budget-prev-phase-disabled,
+.budget-phases .tabs-controls .budget-next-phase-disabled,
+.debate-questions .quiz-header .quiz-next:hover,
+.debate-questions .quiz-header .quiz-next:active,
+.jumbo-budget .button,
+.categories a:hover,
+.categories a.is-active,
+.geozone a:hover,
+.geozone a.is-active,
+.public>.wrapper>header .top-bar,
+.proposal-dashboard>header .top-bar,
+.pagination .current,
+.ui-datepicker-calendar .ui-state-hover,
+.ui-datepicker-calendar .ui-state-active,
+.ui-datepicker-header,
+.budgets-index>header,
+.budget-group-show>header,
+.budget-groups-index>header,
+.budget-ballot-show>header,
+.budget-header {
     background-color: #004a83;
     color: #fdfdfd;
 }
-.budget-phases .tabs-controls .budget-prev-phase, .budget-phases .tabs-controls .budget-next-phase, .budget-phases .tabs-controls .budget-prev-phase-disabled, .budget-phases .tabs-controls .budget-next-phase-disabled, .debate-questions .quiz-header .quiz-next:hover, .debate-questions .quiz-header .quiz-next:active, .jumbo-budget .button, .categories a:hover, .categories a.is-active, .geozone a:hover, .geozone a.is-active, .public>.wrapper>header .top-bar, .proposal-dashboard>header .top-bar, .pagination .current, .ui-datepicker-calendar .ui-state-hover, .ui-datepicker-calendar .ui-state-active, .ui-datepicker-header, .budgets-index>header, .budget-group-show>header, .budget-groups-index>header, .budget-ballot-show>header, .budget-header {
+
+.budget-phases .tabs-controls .budget-prev-phase,
+.budget-phases .tabs-controls .budget-next-phase,
+.budget-phases .tabs-controls .budget-prev-phase-disabled,
+.budget-phases .tabs-controls .budget-next-phase-disabled,
+.debate-questions .quiz-header .quiz-next:hover,
+.debate-questions .quiz-header .quiz-next:active,
+.jumbo-budget .button,
+.categories a:hover,
+.categories a.is-active,
+.geozone a:hover,
+.geozone a.is-active,
+.public>.wrapper>header .top-bar,
+.proposal-dashboard>header .top-bar,
+.pagination .current,
+.ui-datepicker-calendar .ui-state-hover,
+.ui-datepicker-calendar .ui-state-active,
+.ui-datepicker-header,
+.budgets-index>header,
+.budget-group-show>header,
+.budget-groups-index>header,
+.budget-ballot-show>header,
+.budget-header {
     background-color: #004a83;
     color: #fdfdfd;
 }
+
 body {
     display: -webkit-box;
     display: -webkit-flex;
@@ -460,6 +646,7 @@ body {
     font-size: 1.0625rem;
     min-height: 100%;
 }
+
 body {
     margin: 0;
     padding: 0;
@@ -471,61 +658,274 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
 html {
     font-size: calc(0.25em + Max(0.75em, 0.75vw));
 }
+
 html {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     font-size: 100%;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     -webkit-box-sizing: inherit;
     box-sizing: inherit;
 }
-*, *::before, *::after {
+
+*,
+*::before,
+*::after {
     -webkit-box-sizing: inherit;
     box-sizing: inherit;
 }
-.budget-phases .tabs-controls .budget-prev-phase::selection, .budget-phases .tabs-controls .budget-next-phase::selection, .budget-phases .tabs-controls .budget-prev-phase-disabled::selection, .budget-phases .tabs-controls .budget-next-phase-disabled::selection, .debate-questions .quiz-header .quiz-next:hover::selection, .debate-questions .quiz-header .quiz-next:active::selection, .jumbo-budget .button::selection, .categories a:hover::selection, .categories a.is-active::selection, .geozone a:hover::selection, .geozone a.is-active::selection, .public>.wrapper>header .top-bar::selection, .proposal-dashboard>header .top-bar::selection, .pagination .current::selection, .ui-datepicker-calendar .ui-state-hover::selection, .ui-datepicker-calendar .ui-state-active::selection, .ui-datepicker-header::selection, .budgets-index>header::selection, .budget-group-show>header::selection, .budget-groups-index>header::selection, .budget-ballot-show>header::selection, .budget-header::selection, .budget-phases .tabs-controls .budget-prev-phase *::selection, .budget-phases .tabs-controls .budget-next-phase *::selection, .budget-phases .tabs-controls .budget-prev-phase-disabled *::selection, .budget-phases .tabs-controls .budget-next-phase-disabled *::selection, .debate-questions .quiz-header .quiz-next:hover *::selection, .debate-questions .quiz-header .quiz-next:active *::selection, .jumbo-budget .button *::selection, .categories a:hover *::selection, .categories a.is-active *::selection, .geozone a:hover *::selection, .geozone a.is-active *::selection, .public>.wrapper>header .top-bar *::selection, .proposal-dashboard>header .top-bar *::selection, .pagination .current *::selection, .ui-datepicker-calendar .ui-state-hover *::selection, .ui-datepicker-calendar .ui-state-active *::selection, .ui-datepicker-header *::selection, .budgets-index>header *::selection, .budget-group-show>header *::selection, .budget-groups-index>header *::selection, .budget-ballot-show>header *::selection, .budget-header *::selection {
-    background-color: rgba(253,253,253,0.99);
+
+.budget-phases .tabs-controls .budget-prev-phase::selection,
+.budget-phases .tabs-controls .budget-next-phase::selection,
+.budget-phases .tabs-controls .budget-prev-phase-disabled::selection,
+.budget-phases .tabs-controls .budget-next-phase-disabled::selection,
+.debate-questions .quiz-header .quiz-next:hover::selection,
+.debate-questions .quiz-header .quiz-next:active::selection,
+.jumbo-budget .button::selection,
+.categories a:hover::selection,
+.categories a.is-active::selection,
+.geozone a:hover::selection,
+.geozone a.is-active::selection,
+.public>.wrapper>header .top-bar::selection,
+.proposal-dashboard>header .top-bar::selection,
+.pagination .current::selection,
+.ui-datepicker-calendar .ui-state-hover::selection,
+.ui-datepicker-calendar .ui-state-active::selection,
+.ui-datepicker-header::selection,
+.budgets-index>header::selection,
+.budget-group-show>header::selection,
+.budget-groups-index>header::selection,
+.budget-ballot-show>header::selection,
+.budget-header::selection,
+.budget-phases .tabs-controls .budget-prev-phase *::selection,
+.budget-phases .tabs-controls .budget-next-phase *::selection,
+.budget-phases .tabs-controls .budget-prev-phase-disabled *::selection,
+.budget-phases .tabs-controls .budget-next-phase-disabled *::selection,
+.debate-questions .quiz-header .quiz-next:hover *::selection,
+.debate-questions .quiz-header .quiz-next:active *::selection,
+.jumbo-budget .button *::selection,
+.categories a:hover *::selection,
+.categories a.is-active *::selection,
+.geozone a:hover *::selection,
+.geozone a.is-active *::selection,
+.public>.wrapper>header .top-bar *::selection,
+.proposal-dashboard>header .top-bar *::selection,
+.pagination .current *::selection,
+.ui-datepicker-calendar .ui-state-hover *::selection,
+.ui-datepicker-calendar .ui-state-active *::selection,
+.ui-datepicker-header *::selection,
+.budgets-index>header *::selection,
+.budget-group-show>header *::selection,
+.budget-groups-index>header *::selection,
+.budget-ballot-show>header *::selection,
+.budget-header *::selection {
+    background-color: rgba(253, 253, 253, 0.99);
     color: #004a83;
 }
-.budget-phases .tabs-controls .budget-prev-phase::selection, .budget-phases .tabs-controls .budget-next-phase::selection, .budget-phases .tabs-controls .budget-prev-phase-disabled::selection, .budget-phases .tabs-controls .budget-next-phase-disabled::selection, .debate-questions .quiz-header .quiz-next:hover::selection, .debate-questions .quiz-header .quiz-next:active::selection, .jumbo-budget .button::selection, .categories a:hover::selection, .categories a.is-active::selection, .geozone a:hover::selection, .geozone a.is-active::selection, .public>.wrapper>header .top-bar::selection, .proposal-dashboard>header .top-bar::selection, .pagination .current::selection, .ui-datepicker-calendar .ui-state-hover::selection, .ui-datepicker-calendar .ui-state-active::selection, .ui-datepicker-header::selection, .budgets-index>header::selection, .budget-group-show>header::selection, .budget-groups-index>header::selection, .budget-ballot-show>header::selection, .budget-header::selection, .budget-phases .tabs-controls .budget-prev-phase *::selection, .budget-phases .tabs-controls .budget-next-phase *::selection, .budget-phases .tabs-controls .budget-prev-phase-disabled *::selection, .budget-phases .tabs-controls .budget-next-phase-disabled *::selection, .debate-questions .quiz-header .quiz-next:hover *::selection, .debate-questions .quiz-header .quiz-next:active *::selection, .jumbo-budget .button *::selection, .categories a:hover *::selection, .categories a.is-active *::selection, .geozone a:hover *::selection, .geozone a.is-active *::selection, .public>.wrapper>header .top-bar *::selection, .proposal-dashboard>header .top-bar *::selection, .pagination .current *::selection, .ui-datepicker-calendar .ui-state-hover *::selection, .ui-datepicker-calendar .ui-state-active *::selection, .ui-datepicker-header *::selection, .budgets-index>header *::selection, .budget-group-show>header *::selection, .budget-groups-index>header *::selection, .budget-ballot-show>header *::selection, .budget-header *::selection {
-    background-color: rgba(253,253,253,0.99);
+
+.budget-phases .tabs-controls .budget-prev-phase::selection,
+.budget-phases .tabs-controls .budget-next-phase::selection,
+.budget-phases .tabs-controls .budget-prev-phase-disabled::selection,
+.budget-phases .tabs-controls .budget-next-phase-disabled::selection,
+.debate-questions .quiz-header .quiz-next:hover::selection,
+.debate-questions .quiz-header .quiz-next:active::selection,
+.jumbo-budget .button::selection,
+.categories a:hover::selection,
+.categories a.is-active::selection,
+.geozone a:hover::selection,
+.geozone a.is-active::selection,
+.public>.wrapper>header .top-bar::selection,
+.proposal-dashboard>header .top-bar::selection,
+.pagination .current::selection,
+.ui-datepicker-calendar .ui-state-hover::selection,
+.ui-datepicker-calendar .ui-state-active::selection,
+.ui-datepicker-header::selection,
+.budgets-index>header::selection,
+.budget-group-show>header::selection,
+.budget-groups-index>header::selection,
+.budget-ballot-show>header::selection,
+.budget-header::selection,
+.budget-phases .tabs-controls .budget-prev-phase *::selection,
+.budget-phases .tabs-controls .budget-next-phase *::selection,
+.budget-phases .tabs-controls .budget-prev-phase-disabled *::selection,
+.budget-phases .tabs-controls .budget-next-phase-disabled *::selection,
+.debate-questions .quiz-header .quiz-next:hover *::selection,
+.debate-questions .quiz-header .quiz-next:active *::selection,
+.jumbo-budget .button *::selection,
+.categories a:hover *::selection,
+.categories a.is-active *::selection,
+.geozone a:hover *::selection,
+.geozone a.is-active *::selection,
+.public>.wrapper>header .top-bar *::selection,
+.proposal-dashboard>header .top-bar *::selection,
+.pagination .current *::selection,
+.ui-datepicker-calendar .ui-state-hover *::selection,
+.ui-datepicker-calendar .ui-state-active *::selection,
+.ui-datepicker-header *::selection,
+.budgets-index>header *::selection,
+.budget-group-show>header *::selection,
+.budget-groups-index>header *::selection,
+.budget-ballot-show>header *::selection,
+.budget-header *::selection {
+    background-color: rgba(253, 253, 253, 0.99);
     color: #004a83;
 }
-.budget-phases .tabs-controls .budget-prev-phase::selection, .budget-phases .tabs-controls .budget-next-phase::selection, .budget-phases .tabs-controls .budget-prev-phase-disabled::selection, .budget-phases .tabs-controls .budget-next-phase-disabled::selection, .debate-questions .quiz-header .quiz-next:hover::selection, .debate-questions .quiz-header .quiz-next:active::selection, .jumbo-budget .button::selection, .categories a:hover::selection, .categories a.is-active::selection, .geozone a:hover::selection, .geozone a.is-active::selection, .public>.wrapper>header .top-bar::selection, .proposal-dashboard>header .top-bar::selection, .pagination .current::selection, .ui-datepicker-calendar .ui-state-hover::selection, .ui-datepicker-calendar .ui-state-active::selection, .ui-datepicker-header::selection, .budgets-index>header::selection, .budget-group-show>header::selection, .budget-groups-index>header::selection, .budget-ballot-show>header::selection, .budget-header::selection, .budget-phases .tabs-controls .budget-prev-phase *::selection, .budget-phases .tabs-controls .budget-next-phase *::selection, .budget-phases .tabs-controls .budget-prev-phase-disabled *::selection, .budget-phases .tabs-controls .budget-next-phase-disabled *::selection, .debate-questions .quiz-header .quiz-next:hover *::selection, .debate-questions .quiz-header .quiz-next:active *::selection, .jumbo-budget .button *::selection, .categories a:hover *::selection, .categories a.is-active *::selection, .geozone a:hover *::selection, .geozone a.is-active *::selection, .public>.wrapper>header .top-bar *::selection, .proposal-dashboard>header .top-bar *::selection, .pagination .current *::selection, .ui-datepicker-calendar .ui-state-hover *::selection, .ui-datepicker-calendar .ui-state-active *::selection, .ui-datepicker-header *::selection, .budgets-index>header *::selection, .budget-group-show>header *::selection, .budget-groups-index>header *::selection, .budget-ballot-show>header *::selection, .budget-header *::selection {
-    background-color: rgba(253,253,253,0.99);
+
+.budget-phases .tabs-controls .budget-prev-phase::selection,
+.budget-phases .tabs-controls .budget-next-phase::selection,
+.budget-phases .tabs-controls .budget-prev-phase-disabled::selection,
+.budget-phases .tabs-controls .budget-next-phase-disabled::selection,
+.debate-questions .quiz-header .quiz-next:hover::selection,
+.debate-questions .quiz-header .quiz-next:active::selection,
+.jumbo-budget .button::selection,
+.categories a:hover::selection,
+.categories a.is-active::selection,
+.geozone a:hover::selection,
+.geozone a.is-active::selection,
+.public>.wrapper>header .top-bar::selection,
+.proposal-dashboard>header .top-bar::selection,
+.pagination .current::selection,
+.ui-datepicker-calendar .ui-state-hover::selection,
+.ui-datepicker-calendar .ui-state-active::selection,
+.ui-datepicker-header::selection,
+.budgets-index>header::selection,
+.budget-group-show>header::selection,
+.budget-groups-index>header::selection,
+.budget-ballot-show>header::selection,
+.budget-header::selection,
+.budget-phases .tabs-controls .budget-prev-phase *::selection,
+.budget-phases .tabs-controls .budget-next-phase *::selection,
+.budget-phases .tabs-controls .budget-prev-phase-disabled *::selection,
+.budget-phases .tabs-controls .budget-next-phase-disabled *::selection,
+.debate-questions .quiz-header .quiz-next:hover *::selection,
+.debate-questions .quiz-header .quiz-next:active *::selection,
+.jumbo-budget .button *::selection,
+.categories a:hover *::selection,
+.categories a.is-active *::selection,
+.geozone a:hover *::selection,
+.geozone a.is-active *::selection,
+.public>.wrapper>header .top-bar *::selection,
+.proposal-dashboard>header .top-bar *::selection,
+.pagination .current *::selection,
+.ui-datepicker-calendar .ui-state-hover *::selection,
+.ui-datepicker-calendar .ui-state-active *::selection,
+.ui-datepicker-header *::selection,
+.budgets-index>header *::selection,
+.budget-group-show>header *::selection,
+.budget-groups-index>header *::selection,
+.budget-ballot-show>header *::selection,
+.budget-header *::selection {
+    background-color: rgba(253, 253, 253, 0.99);
     color: #004a83;
 }
-*::selection, * *::selection {
+
+*::selection,
+* *::selection {
     background-color: #004a83;
     color: #fdfdfd;
 }
-.budget-phases .tabs-controls .budget-prev-phase, .budget-phases .tabs-controls .budget-next-phase, .budget-phases .tabs-controls .budget-prev-phase-disabled, .budget-phases .tabs-controls .budget-next-phase-disabled, .debate-questions .quiz-header .quiz-next:hover, .debate-questions .quiz-header .quiz-next:active, .jumbo-budget .button, .categories a:hover, .categories a.is-active, .geozone a:hover, .geozone a.is-active, .public>.wrapper>header .top-bar, .proposal-dashboard>header .top-bar, .pagination .current, .ui-datepicker-calendar .ui-state-hover, .ui-datepicker-calendar .ui-state-active, .ui-datepicker-header, .budgets-index>header, .budget-group-show>header, .budget-groups-index>header, .budget-ballot-show>header, .budget-header {
+
+.budget-phases .tabs-controls .budget-prev-phase,
+.budget-phases .tabs-controls .budget-next-phase,
+.budget-phases .tabs-controls .budget-prev-phase-disabled,
+.budget-phases .tabs-controls .budget-next-phase-disabled,
+.debate-questions .quiz-header .quiz-next:hover,
+.debate-questions .quiz-header .quiz-next:active,
+.jumbo-budget .button,
+.categories a:hover,
+.categories a.is-active,
+.geozone a:hover,
+.geozone a.is-active,
+.public>.wrapper>header .top-bar,
+.proposal-dashboard>header .top-bar,
+.pagination .current,
+.ui-datepicker-calendar .ui-state-hover,
+.ui-datepicker-calendar .ui-state-active,
+.ui-datepicker-header,
+.budgets-index>header,
+.budget-group-show>header,
+.budget-groups-index>header,
+.budget-ballot-show>header,
+.budget-header {
     background-color: #004a83;
     color: #fdfdfd;
 }
-.budget-phases .tabs-controls .budget-prev-phase, .budget-phases .tabs-controls .budget-next-phase, .budget-phases .tabs-controls .budget-prev-phase-disabled, .budget-phases .tabs-controls .budget-next-phase-disabled, .debate-questions .quiz-header .quiz-next:hover, .debate-questions .quiz-header .quiz-next:active, .jumbo-budget .button, .categories a:hover, .categories a.is-active, .geozone a:hover, .geozone a.is-active, .public>.wrapper>header .top-bar, .proposal-dashboard>header .top-bar, .pagination .current, .ui-datepicker-calendar .ui-state-hover, .ui-datepicker-calendar .ui-state-active, .ui-datepicker-header, .budgets-index>header, .budget-group-show>header, .budget-groups-index>header, .budget-ballot-show>header, .budget-header {
+
+.budget-phases .tabs-controls .budget-prev-phase,
+.budget-phases .tabs-controls .budget-next-phase,
+.budget-phases .tabs-controls .budget-prev-phase-disabled,
+.budget-phases .tabs-controls .budget-next-phase-disabled,
+.debate-questions .quiz-header .quiz-next:hover,
+.debate-questions .quiz-header .quiz-next:active,
+.jumbo-budget .button,
+.categories a:hover,
+.categories a.is-active,
+.geozone a:hover,
+.geozone a.is-active,
+.public>.wrapper>header .top-bar,
+.proposal-dashboard>header .top-bar,
+.pagination .current,
+.ui-datepicker-calendar .ui-state-hover,
+.ui-datepicker-calendar .ui-state-active,
+.ui-datepicker-header,
+.budgets-index>header,
+.budget-group-show>header,
+.budget-groups-index>header,
+.budget-ballot-show>header,
+.budget-header {
     background-color: #004a83;
     color: #fdfdfd;
 }
-.budget-phases .tabs-controls .budget-prev-phase, .budget-phases .tabs-controls .budget-next-phase, .budget-phases .tabs-controls .budget-prev-phase-disabled, .budget-phases .tabs-controls .budget-next-phase-disabled, .debate-questions .quiz-header .quiz-next:hover, .debate-questions .quiz-header .quiz-next:active, .jumbo-budget .button, .categories a:hover, .categories a.is-active, .geozone a:hover, .geozone a.is-active, .public>.wrapper>header .top-bar, .proposal-dashboard>header .top-bar, .pagination .current, .ui-datepicker-calendar .ui-state-hover, .ui-datepicker-calendar .ui-state-active, .ui-datepicker-header, .budgets-index>header, .budget-group-show>header, .budget-groups-index>header, .budget-ballot-show>header, .budget-header {
+
+.budget-phases .tabs-controls .budget-prev-phase,
+.budget-phases .tabs-controls .budget-next-phase,
+.budget-phases .tabs-controls .budget-prev-phase-disabled,
+.budget-phases .tabs-controls .budget-next-phase-disabled,
+.debate-questions .quiz-header .quiz-next:hover,
+.debate-questions .quiz-header .quiz-next:active,
+.jumbo-budget .button,
+.categories a:hover,
+.categories a.is-active,
+.geozone a:hover,
+.geozone a.is-active,
+.public>.wrapper>header .top-bar,
+.proposal-dashboard>header .top-bar,
+.pagination .current,
+.ui-datepicker-calendar .ui-state-hover,
+.ui-datepicker-calendar .ui-state-active,
+.ui-datepicker-header,
+.budgets-index>header,
+.budget-group-show>header,
+.budget-groups-index>header,
+.budget-ballot-show>header,
+.budget-header {
     background-color: #004a83;
     color: #fdfdfd;
 }
-.public>.wrapper>header>*, .proposal-dashboard>header>* {
+
+.public>.wrapper>header>*,
+.proposal-dashboard>header>* {
     position: relative;
 }
+
 .top-bar {
     background-color: inherit;
     padding: 0;
 }
-.top-bar, .top-bar ul {
+
+.top-bar,
+.top-bar ul {
     background-color: #e6e6e6;
 }
+
 .top-bar {
     display: -webkit-box;
     display: -webkit-flex;
@@ -547,18 +947,41 @@ html {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
-div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, th, td {
+
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+p,
+blockquote,
+th,
+td {
     margin: 0;
     padding: 0;
 }
-*, *::before, *::after {
+
+*,
+*::before,
+*::after {
     -webkit-box-sizing: inherit;
     box-sizing: inherit;
 }
-user agent stylesheet
-div {
+
+user agent stylesheet div {
     display: block;
 }
+
 body {
     display: -webkit-box;
     display: -webkit-flex;
@@ -572,6 +995,7 @@ body {
     font-size: 1.0625rem;
     min-height: 100%;
 }
+
 body {
     margin: 0;
     padding: 0;
@@ -583,16 +1007,19 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
 html {
     font-size: calc(0.25em + Max(0.75em, 0.75vw));
 }
+
 html {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     font-size: 100%;
 }
 
-.public>.wrapper>header>*::before, .proposal-dashboard>header>*::before {
+.public>.wrapper>header>*::before,
+.proposal-dashboard>header>*::before {
     bottom: 0;
     content: "";
     display: block;
@@ -606,31 +1033,172 @@ html {
     background: inherit;
     z-index: -1;
 }
-*, *::before, *::after {
+
+*,
+*::before,
+*::after {
     -webkit-box-sizing: inherit;
     box-sizing: inherit;
 }
-*, *::before, *::after {
+
+*,
+*::before,
+*::after {
     -webkit-box-sizing: inherit;
     box-sizing: inherit;
 }
-.budget-phases .tabs-controls .budget-prev-phase::selection, .budget-phases .tabs-controls .budget-next-phase::selection, .budget-phases .tabs-controls .budget-prev-phase-disabled::selection, .budget-phases .tabs-controls .budget-next-phase-disabled::selection, .debate-questions .quiz-header .quiz-next:hover::selection, .debate-questions .quiz-header .quiz-next:active::selection, .jumbo-budget .button::selection, .categories a:hover::selection, .categories a.is-active::selection, .geozone a:hover::selection, .geozone a.is-active::selection, .public>.wrapper>header .top-bar::selection, .proposal-dashboard>header .top-bar::selection, .pagination .current::selection, .ui-datepicker-calendar .ui-state-hover::selection, .ui-datepicker-calendar .ui-state-active::selection, .ui-datepicker-header::selection, .budgets-index>header::selection, .budget-group-show>header::selection, .budget-groups-index>header::selection, .budget-ballot-show>header::selection, .budget-header::selection, .budget-phases .tabs-controls .budget-prev-phase *::selection, .budget-phases .tabs-controls .budget-next-phase *::selection, .budget-phases .tabs-controls .budget-prev-phase-disabled *::selection, .budget-phases .tabs-controls .budget-next-phase-disabled *::selection, .debate-questions .quiz-header .quiz-next:hover *::selection, .debate-questions .quiz-header .quiz-next:active *::selection, .jumbo-budget .button *::selection, .categories a:hover *::selection, .categories a.is-active *::selection, .geozone a:hover *::selection, .geozone a.is-active *::selection, .public>.wrapper>header .top-bar *::selection, .proposal-dashboard>header .top-bar *::selection, .pagination .current *::selection, .ui-datepicker-calendar .ui-state-hover *::selection, .ui-datepicker-calendar .ui-state-active *::selection, .ui-datepicker-header *::selection, .budgets-index>header *::selection, .budget-group-show>header *::selection, .budget-groups-index>header *::selection, .budget-ballot-show>header *::selection, .budget-header *::selection {
-    background-color: rgba(253,253,253,0.99);
+
+.budget-phases .tabs-controls .budget-prev-phase::selection,
+.budget-phases .tabs-controls .budget-next-phase::selection,
+.budget-phases .tabs-controls .budget-prev-phase-disabled::selection,
+.budget-phases .tabs-controls .budget-next-phase-disabled::selection,
+.debate-questions .quiz-header .quiz-next:hover::selection,
+.debate-questions .quiz-header .quiz-next:active::selection,
+.jumbo-budget .button::selection,
+.categories a:hover::selection,
+.categories a.is-active::selection,
+.geozone a:hover::selection,
+.geozone a.is-active::selection,
+.public>.wrapper>header .top-bar::selection,
+.proposal-dashboard>header .top-bar::selection,
+.pagination .current::selection,
+.ui-datepicker-calendar .ui-state-hover::selection,
+.ui-datepicker-calendar .ui-state-active::selection,
+.ui-datepicker-header::selection,
+.budgets-index>header::selection,
+.budget-group-show>header::selection,
+.budget-groups-index>header::selection,
+.budget-ballot-show>header::selection,
+.budget-header::selection,
+.budget-phases .tabs-controls .budget-prev-phase *::selection,
+.budget-phases .tabs-controls .budget-next-phase *::selection,
+.budget-phases .tabs-controls .budget-prev-phase-disabled *::selection,
+.budget-phases .tabs-controls .budget-next-phase-disabled *::selection,
+.debate-questions .quiz-header .quiz-next:hover *::selection,
+.debate-questions .quiz-header .quiz-next:active *::selection,
+.jumbo-budget .button *::selection,
+.categories a:hover *::selection,
+.categories a.is-active *::selection,
+.geozone a:hover *::selection,
+.geozone a.is-active *::selection,
+.public>.wrapper>header .top-bar *::selection,
+.proposal-dashboard>header .top-bar *::selection,
+.pagination .current *::selection,
+.ui-datepicker-calendar .ui-state-hover *::selection,
+.ui-datepicker-calendar .ui-state-active *::selection,
+.ui-datepicker-header *::selection,
+.budgets-index>header *::selection,
+.budget-group-show>header *::selection,
+.budget-groups-index>header *::selection,
+.budget-ballot-show>header *::selection,
+.budget-header *::selection {
+    background-color: rgba(253, 253, 253, 0.99);
     color: #004a83;
 }
-.budget-phases .tabs-controls .budget-prev-phase::selection, .budget-phases .tabs-controls .budget-next-phase::selection, .budget-phases .tabs-controls .budget-prev-phase-disabled::selection, .budget-phases .tabs-controls .budget-next-phase-disabled::selection, .debate-questions .quiz-header .quiz-next:hover::selection, .debate-questions .quiz-header .quiz-next:active::selection, .jumbo-budget .button::selection, .categories a:hover::selection, .categories a.is-active::selection, .geozone a:hover::selection, .geozone a.is-active::selection, .public>.wrapper>header .top-bar::selection, .proposal-dashboard>header .top-bar::selection, .pagination .current::selection, .ui-datepicker-calendar .ui-state-hover::selection, .ui-datepicker-calendar .ui-state-active::selection, .ui-datepicker-header::selection, .budgets-index>header::selection, .budget-group-show>header::selection, .budget-groups-index>header::selection, .budget-ballot-show>header::selection, .budget-header::selection, .budget-phases .tabs-controls .budget-prev-phase *::selection, .budget-phases .tabs-controls .budget-next-phase *::selection, .budget-phases .tabs-controls .budget-prev-phase-disabled *::selection, .budget-phases .tabs-controls .budget-next-phase-disabled *::selection, .debate-questions .quiz-header .quiz-next:hover *::selection, .debate-questions .quiz-header .quiz-next:active *::selection, .jumbo-budget .button *::selection, .categories a:hover *::selection, .categories a.is-active *::selection, .geozone a:hover *::selection, .geozone a.is-active *::selection, .public>.wrapper>header .top-bar *::selection, .proposal-dashboard>header .top-bar *::selection, .pagination .current *::selection, .ui-datepicker-calendar .ui-state-hover *::selection, .ui-datepicker-calendar .ui-state-active *::selection, .ui-datepicker-header *::selection, .budgets-index>header *::selection, .budget-group-show>header *::selection, .budget-groups-index>header *::selection, .budget-ballot-show>header *::selection, .budget-header *::selection {
-    background-color: rgba(253,253,253,0.99);
+
+.budget-phases .tabs-controls .budget-prev-phase::selection,
+.budget-phases .tabs-controls .budget-next-phase::selection,
+.budget-phases .tabs-controls .budget-prev-phase-disabled::selection,
+.budget-phases .tabs-controls .budget-next-phase-disabled::selection,
+.debate-questions .quiz-header .quiz-next:hover::selection,
+.debate-questions .quiz-header .quiz-next:active::selection,
+.jumbo-budget .button::selection,
+.categories a:hover::selection,
+.categories a.is-active::selection,
+.geozone a:hover::selection,
+.geozone a.is-active::selection,
+.public>.wrapper>header .top-bar::selection,
+.proposal-dashboard>header .top-bar::selection,
+.pagination .current::selection,
+.ui-datepicker-calendar .ui-state-hover::selection,
+.ui-datepicker-calendar .ui-state-active::selection,
+.ui-datepicker-header::selection,
+.budgets-index>header::selection,
+.budget-group-show>header::selection,
+.budget-groups-index>header::selection,
+.budget-ballot-show>header::selection,
+.budget-header::selection,
+.budget-phases .tabs-controls .budget-prev-phase *::selection,
+.budget-phases .tabs-controls .budget-next-phase *::selection,
+.budget-phases .tabs-controls .budget-prev-phase-disabled *::selection,
+.budget-phases .tabs-controls .budget-next-phase-disabled *::selection,
+.debate-questions .quiz-header .quiz-next:hover *::selection,
+.debate-questions .quiz-header .quiz-next:active *::selection,
+.jumbo-budget .button *::selection,
+.categories a:hover *::selection,
+.categories a.is-active *::selection,
+.geozone a:hover *::selection,
+.geozone a.is-active *::selection,
+.public>.wrapper>header .top-bar *::selection,
+.proposal-dashboard>header .top-bar *::selection,
+.pagination .current *::selection,
+.ui-datepicker-calendar .ui-state-hover *::selection,
+.ui-datepicker-calendar .ui-state-active *::selection,
+.ui-datepicker-header *::selection,
+.budgets-index>header *::selection,
+.budget-group-show>header *::selection,
+.budget-groups-index>header *::selection,
+.budget-ballot-show>header *::selection,
+.budget-header *::selection {
+    background-color: rgba(253, 253, 253, 0.99);
     color: #004a83;
 }
-.budget-phases .tabs-controls .budget-prev-phase::selection, .budget-phases .tabs-controls .budget-next-phase::selection, .budget-phases .tabs-controls .budget-prev-phase-disabled::selection, .budget-phases .tabs-controls .budget-next-phase-disabled::selection, .debate-questions .quiz-header .quiz-next:hover::selection, .debate-questions .quiz-header .quiz-next:active::selection, .jumbo-budget .button::selection, .categories a:hover::selection, .categories a.is-active::selection, .geozone a:hover::selection, .geozone a.is-active::selection, .public>.wrapper>header .top-bar::selection, .proposal-dashboard>header .top-bar::selection, .pagination .current::selection, .ui-datepicker-calendar .ui-state-hover::selection, .ui-datepicker-calendar .ui-state-active::selection, .ui-datepicker-header::selection, .budgets-index>header::selection, .budget-group-show>header::selection, .budget-groups-index>header::selection, .budget-ballot-show>header::selection, .budget-header::selection, .budget-phases .tabs-controls .budget-prev-phase *::selection, .budget-phases .tabs-controls .budget-next-phase *::selection, .budget-phases .tabs-controls .budget-prev-phase-disabled *::selection, .budget-phases .tabs-controls .budget-next-phase-disabled *::selection, .debate-questions .quiz-header .quiz-next:hover *::selection, .debate-questions .quiz-header .quiz-next:active *::selection, .jumbo-budget .button *::selection, .categories a:hover *::selection, .categories a.is-active *::selection, .geozone a:hover *::selection, .geozone a.is-active *::selection, .public>.wrapper>header .top-bar *::selection, .proposal-dashboard>header .top-bar *::selection, .pagination .current *::selection, .ui-datepicker-calendar .ui-state-hover *::selection, .ui-datepicker-calendar .ui-state-active *::selection, .ui-datepicker-header *::selection, .budgets-index>header *::selection, .budget-group-show>header *::selection, .budget-groups-index>header *::selection, .budget-ballot-show>header *::selection, .budget-header *::selection {
-    background-color: rgba(253,253,253,0.99);
+
+.budget-phases .tabs-controls .budget-prev-phase::selection,
+.budget-phases .tabs-controls .budget-next-phase::selection,
+.budget-phases .tabs-controls .budget-prev-phase-disabled::selection,
+.budget-phases .tabs-controls .budget-next-phase-disabled::selection,
+.debate-questions .quiz-header .quiz-next:hover::selection,
+.debate-questions .quiz-header .quiz-next:active::selection,
+.jumbo-budget .button::selection,
+.categories a:hover::selection,
+.categories a.is-active::selection,
+.geozone a:hover::selection,
+.geozone a.is-active::selection,
+.public>.wrapper>header .top-bar::selection,
+.proposal-dashboard>header .top-bar::selection,
+.pagination .current::selection,
+.ui-datepicker-calendar .ui-state-hover::selection,
+.ui-datepicker-calendar .ui-state-active::selection,
+.ui-datepicker-header::selection,
+.budgets-index>header::selection,
+.budget-group-show>header::selection,
+.budget-groups-index>header::selection,
+.budget-ballot-show>header::selection,
+.budget-header::selection,
+.budget-phases .tabs-controls .budget-prev-phase *::selection,
+.budget-phases .tabs-controls .budget-next-phase *::selection,
+.budget-phases .tabs-controls .budget-prev-phase-disabled *::selection,
+.budget-phases .tabs-controls .budget-next-phase-disabled *::selection,
+.debate-questions .quiz-header .quiz-next:hover *::selection,
+.debate-questions .quiz-header .quiz-next:active *::selection,
+.jumbo-budget .button *::selection,
+.categories a:hover *::selection,
+.categories a.is-active *::selection,
+.geozone a:hover *::selection,
+.geozone a.is-active *::selection,
+.public>.wrapper>header .top-bar *::selection,
+.proposal-dashboard>header .top-bar *::selection,
+.pagination .current *::selection,
+.ui-datepicker-calendar .ui-state-hover *::selection,
+.ui-datepicker-calendar .ui-state-active *::selection,
+.ui-datepicker-header *::selection,
+.budgets-index>header *::selection,
+.budget-group-show>header *::selection,
+.budget-groups-index>header *::selection,
+.budget-ballot-show>header *::selection,
+.budget-header *::selection {
+    background-color: rgba(253, 253, 253, 0.99);
     color: #004a83;
 }
-*::selection, * *::selection {
+
+*::selection,
+* *::selection {
     background-color: #004a83;
     color: #fdfdfd;
 
 }
+
 #complain {
     background-color: #fff;
     max-width: auto;
@@ -638,23 +1206,24 @@ html {
     padding: 30px 20px;
     box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
     border-radius: 20px;
+    width: 50%;
 
-    }
-    
-    .form-control {
+}
+
+.form-control {
     text-align: left;
     margin-bottom: 25px;
-    }
-    
-    
-    .form-control label {
+}
+
+
+.form-control label {
     display: block;
     margin-bottom: 10px;
-    }
-    
-    .form-control input,
-    .form-control select,
-    .form-control textarea {
+}
+
+.form-control input,
+.form-control select,
+.form-control textarea {
 
     border: 1px solid #777;
     border-radius: 2px;
@@ -663,16 +1232,16 @@ html {
     display: block;
     width: 95%;
 
-    }
-    
-    
-    .form-control input[type="radio"],
-    .form-control input[type="checkbox"] {
+}
+
+
+.form-control input[type="radio"],
+.form-control input[type="checkbox"] {
     display: inline-block;
     width: auto;
-    }
+}
 
-.header{
+.header {
 
     text-align: center;
 }
@@ -684,191 +1253,205 @@ html {
 }
 
 
-:root{
+:root {
     --header-height: 9rem;
     /* colors  */
-    --first-color:#EEEDE7;
-    --first-color-dark:#B9B7BD;
-    --first-color-darken:#868B8E;
-    --white-color:rgb(41, 20, 20);
+    --first-color: #EEEDE7;
+    --first-color-dark: #B9B7BD;
+    --first-color-darken: #868B8E;
+    --white-color: rgb(41, 20, 20);
     /* font and typography */
-    --body-font:"Poppins";
-    --big-font-size:2.5rem;
+    --body-font: "Poppins";
+    --big-font-size: 2.5rem;
     --normal-font-size: .938rem;
     /* z index */
-    --z-fixed:100;
-  
-  
-  }
-  
-  @media screen and (min-width: 768px) {
-      :root{
-          --big-font-size:5rem;
-          --normal-font-size: 1rem;
-      }
-      
-  }
-  /* Base */
-  *,::before,::after{
-      box-sizing: border-box;
-  }
-  
-  body{
-      margin: var(--header-height) 0 0 0;
-      padding: 0;
-      font-family: var(--body-font);
-      font-size: var(--normal-font-size);
-      font-weight: 500;
-      background: #f2f2f2;
-  
-  }
-  
-  h1,p,ul{
-      margin:0;
-  }
-  
-  .nav_list{
-      list-style: none;
-      display: flex;
-      padding-top: 1.3rem;
-     float: right; 
-  
-  }
-  
-  /* LAYOUT */
-  .bd-grid{
-      margin-left: 3rem;
-      margin-right: 2rem;
-  }
-  
-  .l-header{
-      width: 100%;
-      position: fixed;
-      top:0;
-      left: 0;
-      z-index:var(--z-fixed);
-      background-color: #004a83;
-  
-  }
-   
-  /* nav */
-  .nav{
-      height: var(--header-height);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-     
-  }
-  
-  .nav_toggle{
-      opacity: 0.0;
-  
-  }
-  .nav_close{
-      opacity: 0.0;
-  }
-  
-  .nav_linksignUp{
+    --z-fixed: 100;
+
+
+}
+
+@media screen and (min-width: 768px) {
+    :root {
+        --big-font-size: 5rem;
+        --normal-font-size: 1rem;
+    }
+
+}
+
+/* Base */
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: var(--header-height) 0 0 0;
+    padding: 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    font-weight: 500;
+    background: #f2f2f2;
+
+}
+
+h1,
+p,
+ul {
+    margin: 0;
+}
+
+.nav_list {
+    list-style: none;
+    display: flex;
+    padding-top: 1.3rem;
+    float: right;
+
+}
+
+/* LAYOUT */
+.bd-grid {
+    margin-left: 3rem;
+    margin-right: 2rem;
+}
+
+.l-header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    background-color: #004a83;
+
+}
+
+/* nav */
+.nav {
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.nav_toggle {
+    opacity: 0.0;
+
+}
+
+.nav_close {
+    opacity: 0.0;
+}
+
+.nav_linksignUp {
     background-color: white;
     height: 30px;
     /* width: fit-content; */
     border-radius: 5px;
     padding: 5px;
-  }
-  
-  .nav_linksignIn{
+}
+
+.nav_linksignIn {
     padding-top: 2px;
     color: white;
-  }
-  @media screen and (max-width: 600px) {
-      .nav_menu{
-          position:fixed;
-          top:0;
-          right: 100%;
-          width: 70%;
-          height: 100%;
-          padding:3.5rem 1.5rem 0;
-          background-color: #004a83;
-          /* backdrop-filter: blur(10px); */
-          transition: .5;
-      }
-      .nav_toggle{
-          opacity: 0.9;
-      }
-      .nav_close{
-          opacity: 0.9;
-      }
-      ul{
-          padding:0;
-          list-style: none;
-          display:block ;
-          padding-top: 1.3rem;
-      }
-      
-      li{
-          padding-left: 5rem;
-      
-      }
-  }
-  
-  .nav_close{
-      position: absolute;
-      top: .75rem;
-      right: 1rem;
-      font-size:1.5rem;
-      cursor: pointer;
-  }
-  
-  .nav_item{
-      margin-bottom: 2rem;
-      margin-left: 1rem;
-  }
-  
-  .nav_close, .nav_link, .nav_logo ,.nav__toggle{
-      color: white;
-  }
-  
-  .nav_link:hover{
-      color:white;
-  }
-  
-  .nav_toggle{
-      font-size: 1.5rem;
-      cursor: pointer;
-  }
-  
-  .show{
-      right: 0;
-  }
-  .navs{
+}
+
+@media screen and (max-width: 600px) {
+    .nav_menu {
+        position: fixed;
+        top: 0;
+        right: 100%;
+        width: 70%;
+        height: 100%;
+        padding: 3.5rem 1.5rem 0;
+        background-color: #004a83;
+        /* backdrop-filter: blur(10px); */
+        transition: .5;
+    }
+
+    .nav_toggle {
+        opacity: 0.9;
+    }
+
+    .nav_close {
+        opacity: 0.9;
+    }
+
+    ul {
+        padding: 0;
+        list-style: none;
+        display: block;
+        padding-top: 1.3rem;
+    }
+
+    li {
+        padding-left: 5rem;
+
+    }
+}
+
+.nav_close {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.nav_item {
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+}
+
+.nav_close,
+.nav_link,
+.nav_logo,
+.nav__toggle {
+    color: white;
+}
+
+.nav_link:hover {
+    color: white;
+}
+
+.nav_toggle {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.show {
+    right: 0;
+}
+
+.navs {
     display: block;
-  }
-  
-  
-  
-  
-  /* second navbar  */
-  
-  .l-header2{
+}
+
+
+
+
+/* second navbar  */
+
+.l-header2 {
     width: 100%;
-    top:0;
+    top: 0;
     left: 0;
-    z-index:var(--z-fixed);
+    z-index: var(--z-fixed);
     background-color: white;
     border-bottom: 1px rgba(116, 113, 113, 0.421) solid;
     height: 70px;
     margin-bottom: 80px;
-    
-  }
-  
-  
-  .nav_item2{
+
+}
+
+
+.nav_item2 {
     margin-bottom: 5rem;
     margin-left: 1rem;
-  
-  }
-  
-  .nav_list2{
+
+}
+
+.nav_list2 {
     list-style: none;
     display: flex;
     padding-top: 1.3rem;
@@ -876,23 +1459,24 @@ html {
     font-weight: bold;
     font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif !important;
     margin-left: 350px;
-  
-  }
-  
-  
-  @import url(https://fonts.googleapis.com/css?family=Open+Sans);
-  
-  
-  .wrap{
+
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+
+.wrap {
     margin-left: 70px;
-  }
-  .search {
+}
+
+.search {
     width: 100%;
     position: relative;
     display: flex;
-  }
-  
-  .searchTerm {
+}
+
+.searchTerm {
     width: 100%;
     border: 1px solid gray;
     border-right: none;
@@ -901,11 +1485,11 @@ html {
     border-radius: 5px 0 0 5px;
     outline: none;
     color: #9DBFAF;
-  }
-  
-  
-  
-  .searchButton {
+}
+
+
+
+.searchButton {
     width: 40px;
     height: 25px;
     border: 1px solid #c9d6d8;
@@ -916,90 +1500,95 @@ html {
     cursor: pointer;
     font-size: 20px;
     color: black;
-  }
-  
-  
-  
-  /* consul icon */
-  .consul-header{
+}
+
+
+
+/* consul icon */
+.consul-header {
     color: white;
     font-size: 3.825rem;
     font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif !important;
-  }
-  
-  .quote-header{
+}
+
+.quote-header {
     width: 60px;
     height: 50px;
-    
-  }
-  
-  
-  
-  .option{
-   Background:url('https://66.media.tumblr.com/f19901f50b79604839ca761cd6d74748/tumblr_o65rohhkQL1qho82wo1_1280.jpg');
-  }
-  
-  
-  /* Home page  cards*/
-  .card{
+
+}
+
+
+
+.option {
+    Background: url('https://66.media.tumblr.com/f19901f50b79604839ca761cd6d74748/tumblr_o65rohhkQL1qho82wo1_1280.jpg');
+}
+
+
+/* Home page  cards*/
+.card {
     display: flex;
     flex-direction: column;
-  }
-  .post-card {
-    margin-top:20px;
+}
+
+.post-card {
+    margin-top: 20px;
     width: 900px;
     height: 300px;
     background-color: rgba(255, 255, 255, 0.981);
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     margin-left: 20rem;
     cursor: pointer;
-    
-  }
-  
-  .avatar-user{
+
+}
+
+.avatar-user {
     width: 60px;
     height: 60px;
     padding: 10px;
     margin-left: 30px
-  }
-  
-  .name-image{
-  
-    display:flex;
-  }
-  .name-user{
+}
+
+.name-image {
+
+    display: flex;
+}
+
+.name-user {
     padding-top: 20px;
     font-weight: bold;
-  
-  }
-  
-  .post-content{
+
+}
+
+.post-content {
     padding: 15px;
     margin-left: 2rem;
     font-weight: 300;
     width: 500px;
     font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif !important;
     line-height: 1.625rem;
-    overflow:hidden;
+    overflow: hidden;
     display: inline-block;
     height: 200px;
-  
-  }
-  
-  .post-card:hover{
+
+}
+
+.post-card:hover {
     box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
-  }
-  .content-vote{
+}
+
+.content-vote {
     display: flex;
-  }
-  .help{
-  margin-left: 90px;
-  margin-top: 70px;
-  width: 100px;
-  height: 100px;
-  cursor: pointer;}
-  
-  .votes{
+}
+
+.help {
+    margin-left: 90px;
+    margin-top: 70px;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+.votes {
     font-size: 80px;
     font-weight: bold;
     margin-top: 70px;
@@ -1007,44 +1596,64 @@ html {
     display: block;
     float: right;
     font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif !important;
-  
-  }
-  
-  
-  /* right side of home */
-  
-  
-  .image-right{
-    width:  250px;
+
+}
+
+
+/* right side of home */
+
+
+.image-right {
+    width: 250px;
     height: 250px;
     margin-left: 200px;
     margin-top: 15px;
     opacity: 0.8;
     margin-bottom: 20px;
-  }
-  
-  .hashtags{
-  width: 300px;
-  height: fit-content;
-  margin-left: 200px;
-  
-  }
-  
-  .hashtags button{
+}
+
+.hashtags {
+    width: 300px;
+    height: fit-content;
+    margin-left: 200px;
+
+}
+
+.hashtags button {
     background-color: white;
     border: none;
-  padding: 10px;
-  margin: 5px;
-  box-shadow: rgba(0, 0, 0, 0.075) 0px 2px 4px 0px;
-  }
-  .grid-container {
-      display: grid;
-      grid-template-areas:
-          'header header header header header header'
-          'menu main main main right right'
-          'menu footer footer footer footer footer';
-      gap: 10px;
-      padding: 10px;
-  }
+    padding: 10px;
+    margin: 5px;
+    box-shadow: rgba(0, 0, 0, 0.075) 0px 2px 4px 0px;
+}
 
- 
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'header header header header header header'
+        'menu main main main right right'
+        'menu footer footer footer footer footer';
+    gap: 10px;
+    padding: 10px;
+}
+
+.compain {
+    align-items: center;
+    grid-template-areas:
+        'header header header header header header'
+        'menu main main main right right'
+        'menu footer footer footer footer footer';
+    gap: 10px;
+    padding: 10px;
+}
+
+
+
+.complaints-container {
+    display: flex;
+    align-items: center;
+}
+
+.line {
+    width: 400px;
+}

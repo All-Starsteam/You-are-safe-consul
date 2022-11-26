@@ -161,7 +161,7 @@ let App = () => {
           </nav>
         </header>
         {/* Home page */}
-        <div className="grid-container">
+        <div className="compain">
           <CreatComplain changeView={changeView} addComplain={addComplain} />
         </div>
         <footer></footer>
