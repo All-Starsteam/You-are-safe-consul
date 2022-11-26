@@ -16,7 +16,10 @@ var HomeRight = (props) => {
 
   return (
     <div>
-      <button className="btn-copmlain">Create Complain</button>
+      <button className="btn-copmlain" onClick={()=>{
+        props.changeView('create')
+        console.log('create');
+           }}>Create Complain</button>
       <div className="line"></div>
       <div>
         <img className="image-right" src={allone} alt="" />
