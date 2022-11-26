@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import allone from "../images/allOne.png";
 var HomeRight = (props) => {
-  const Topics = ["violence", "rape", "hei", "hiiii"];
+ 
   var [counter, setCounter] = useState(0);
   var [counter2, setCounter2] = useState(0);
   var func1 = () => {
@@ -29,8 +29,8 @@ var HomeRight = (props) => {
     }
   };
 
-import allone from '../images/allOne.png'
-var HomeRight = (props) =>{
+
+
 const Topics = [
   "Bullying",
   "Racism/Sexism",
