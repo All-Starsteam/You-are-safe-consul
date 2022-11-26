@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import AllComplains from "./components/AllComplains.jsx";
 import CreateComplain from "./components/CreateComplain.jsx";
 import axios from "axios";
+
 import "./App.css";
 
 let App = () => {
@@ -20,10 +21,61 @@ let App = () => {
   const update=(id,post)=>{
     axios.put(`/api/update/${id}`,post)
   }
+
   const changeView = (newview) => {
     setView(newview);
   };
   const addComplain = (complain) => {
+
+    console.log(complain);
+    axios
+      .post("", complain)
+      .then((res) => console.log("passed"))
+      .catch((err) => console.log(err));
+  };
+  return (
+    <>
+          <div>
+        <nav className=" nav">
+          <div
+            className={
+              view !== "createcomplain"
+                ? "nav-unselected"
+                : "nav-selected"
+            }
+            onClick={() => {
+              setView("createcomplain");
+            }}
+          >
+            Create Post
+          </div>
+          <div
+            className={
+              view === "allcomplains" ? "nav-selected" : "nav-unselected"
+            }
+            onClick={() => {
+              setView("allcomplains");
+              // console.log(this.state)
+            
+            }}
+          >
+            All Posts
+          </div>
+         
+        </nav>
+
+      </div>
+  
+      {view === "AllComplains" && (
+        <AllComplains data={data} changeView={changeView} />
+      )}
+      {view === "OneComplain" && <OneComplain />}
+      {view === "createComplain" && (
+        <CreateComplain addComplain={addComplain} />
+      )}
+    </>
+  );
+=======
     axios
       .post("http://localhost:4000/uas", complain)
       .then((res) => console.log("passed"))
@@ -64,6 +116,7 @@ let App = () => {
   if (view === "add") {
     return <CreateComplain addComplain={addComplain} />;
   }
+
 };
 
 export default App;

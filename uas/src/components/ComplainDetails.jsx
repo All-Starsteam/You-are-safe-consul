@@ -1,6 +1,7 @@
 import React from "react";
 
 const ComplainDetails = (props) => {
+
  
 
   return (
@@ -13,6 +14,7 @@ const ComplainDetails = (props) => {
       <button onClick={() => {}}>⬇️</button>
       <button onClick={() => {props.changeView('update')}}>update</button>
       <button onClick={() => {props.delete(props.data._id)}}>delete</button>
+
     </div>
   );
 };
