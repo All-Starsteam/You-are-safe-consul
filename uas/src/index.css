@@ -171,6 +171,8 @@ h1,p,ul{
   background-color: white;
   border-bottom: 1px rgba(116, 113, 113, 0.421) solid;
   height: 70px;
+  margin-bottom: 80px;
+  
 }
 
 
@@ -187,6 +189,7 @@ h1,p,ul{
   float: left;
   font-weight: bold;
   font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif !important;
+  margin-left: 350px;
 
 }
 
@@ -194,7 +197,9 @@ h1,p,ul{
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
 
-
+.wrap{
+  margin-left: 70px;
+}
 .search {
   width: 100%;
   position: relative;
@@ -227,9 +232,7 @@ h1,p,ul{
   color: black;
 }
 
-.wrap{
-  margin-left: 700px;
-}
+
 
 /* consul icon */
 .consul-header{
@@ -246,3 +249,104 @@ h1,p,ul{
 
 
 
+.option{
+ Background:url('https://66.media.tumblr.com/f19901f50b79604839ca761cd6d74748/tumblr_o65rohhkQL1qho82wo1_1280.jpg');
+}
+
+
+/* Home page  cards*/
+.card{
+  display: flex;
+}
+.post-card {
+  margin-top:20px;
+  width: 900px;
+  height: 300px;
+  background-color: rgba(255, 255, 255, 0.981);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  margin-left: 20rem;
+  cursor: pointer;
+  
+}
+
+.avatar-user{
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+  margin-left: 30px
+}
+
+.name-image{
+
+  display:flex;
+}
+.name-user{
+  padding-top: 20px;
+  font-weight: bold;
+
+}
+
+.post-content{
+  padding: 15px;
+  margin-left: 2rem;
+  font-weight: 300;
+  width: 500px;
+  font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif !important;
+  line-height: 1.625rem;
+  overflow:hidden;
+  display: inline-block;
+  height: 200px;
+
+}
+
+.post-card:hover{
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+.content-vote{
+  display: flex;
+}
+.help{
+margin-left: 90px;
+margin-top: 70px;
+width: 100px;
+height: 100px;
+cursor: pointer;}
+
+.votes{
+  font-size: 80px;
+  font-weight: bold;
+  margin-top: 70px;
+  margin-left: 10px;
+  display: block;
+  float: right;
+  font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif !important;
+
+}
+
+
+/* right side of home */
+
+
+.image-right{
+  width:  250px;
+  height: 250px;
+  margin-left: 200px;
+  margin-top: 15px;
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+
+.hashtags{
+width: 300px;
+height: fit-content;
+margin-left: 200px;
+
+}
+
+.hashtags button{
+  background-color: white;
+  border: none;
+padding: 10px;
+margin: 5px;
+box-shadow: rgba(0, 0, 0, 0.075) 0px 2px 4px 0px;
+}

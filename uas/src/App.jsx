@@ -4,6 +4,7 @@ import AllComplains from "./components/AllComplains.jsx";
 import exampleData from "./dummydata";
 import OneComplain from "./components/OneComplain.jsx";
 import CreateComplain from "./components/CreateComplain.jsx";
+import Home from './components/HomeLeft.jsx'
 import { AiOutlineMenu, AiOutlineClose,AiOutlineSearch } from "react-icons/ai";
 import quotes from "./images/quotes1.png";
 import axios from "axios";
@@ -124,7 +125,8 @@ let App = () => {
           </ul>
         </nav>
       </header>
-
+{/* Home page */}
+<Home />
       <footer></footer>
     </div>
   );
