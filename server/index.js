@@ -24,6 +24,18 @@ app.get("/api/posts",   (req, res) => {
         }
       });
     });
+    app.delete('/api/:id', (req, res) => {
+      post.deleteOne({_id:req.params.id}, (err, result) => {
+
+        if (err) {
+          res.json(err);
+        } else {
+          res.json(result);
+        }
+
+      })
+    })
+
     
 app.listen(PORT,()=>{
     console.log(`server connected to localhost:${PORT}`)
