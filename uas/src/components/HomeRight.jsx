@@ -3,13 +3,28 @@ import allone from "../images/allOne.png";
 var HomeRight = (props) => {
   const Topics = ["violence", "rape", "hei", "hiiii"];
   var [counter, setCounter] = useState(0);
+  var [counter2, setCounter2] = useState(0);
+  var func1 = () => {
+    var timer;
+    timer = setTimeout(() => {
+      
+      var b = counter2+1
+      
+      setCounter2(b);
+    }, 0.1);
+    if ( counter2 === 1766) {
+      clearTimeout(timer);
+    }
+  };
   var func = () => {
     var timer;
     timer = setTimeout(() => {
       var c = counter + 1;
+      
       setCounter(c);
-    }, 100);
-    if (counter === 70) {
+      
+    }, 0.1);
+    if (counter === 7588) {
       clearTimeout(timer);
     }
   };
@@ -45,7 +60,7 @@ const Topics = [
               #{e}
             </button>
           ))}
-
+</div>
           <div className="wrappers">
             <div className="container">
               <span className="num" data-val="400">
@@ -55,7 +70,16 @@ const Topics = [
               <span className="text">women abuse</span>
             </div>
           </div>
-        </div>
+          <div className="wrappers">
+            <div className="container">
+              <span className="num" data-val="400">
+                {counter2}
+                {func1()}
+              </span>
+              <span className="text">child abuse</span>
+            </div>
+          </div>
+        
       </div>
     </div>
   );
