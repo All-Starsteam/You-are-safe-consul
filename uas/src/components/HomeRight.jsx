@@ -2,7 +2,12 @@ import React from 'react'
 
 import allone from '../images/allOne.png'
 var HomeRight = (props) =>{
-const Topics=['violence','rape','hei','hiiii']
+const Topics = [
+  "Bullying",
+  "Racism/Sexism",
+  "Sexual Violence",
+  "Domestic Violence ",
+];
 
       return (
       <div>
