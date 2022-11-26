@@ -11,10 +11,27 @@ mongoose
 
 let postSchema = mongoose.Schema({
     username:{type:String,default:'annonymous',require :false,},
-    topic:String ,
-    ipAdresse:String,
-    content:String,
-    placement:String
+    topic:{type:String,require :true,} ,
+    
+    content:{type:String,require :true,},
+    placement:{type:String,require :true,},
+    
+    upVote:{type:Number,default:0,require :false,},
+    downVote:{type:Number,default:0,require :false,}
+});
+let gouver=mongoose.Schema({
+    placement:String,
+    population:Number,
+    Women:Number,
+    Kids:Number
+})
+let users = mongoose.Schema({
+  username: String,
+  
+  password: String,
+  points: Number
+
+  
 });
 let save = (repo) => {
   Repo.create(repo).then(
@@ -22,6 +39,7 @@ let save = (repo) => {
   ).catch(err=>console.log(err))
   
 };
+let government = mongoose.model("government",gouver);
 let post = mongoose.model("posts", postSchema);
-
-module.exports = post;
+let user = mongoose.model("users", users);
+module.exports = {post,user,government};
