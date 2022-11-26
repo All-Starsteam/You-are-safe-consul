@@ -12,13 +12,36 @@ const ComplainDetails = (props) => {
           <img className="avatar-user" src={user} alt="" />
           <span className="name-user">{props.data._id}</span>
           {dots === false ? (
-            <BsThreeDotsVertical  onClick={()=>{setDots(!dots)}} className="threeDots" />
+            <BsThreeDotsVertical
+              onClick={() => {
+                setDots(!dots);
+              }}
+              className="threeDots"
+            />
           ) : (
-            <div  onClick={()=>{setDots(!dots)}} className="dots-block">
-             <ul>
-              <li> Delete</li>
-               <li>update</li>
-             </ul>
+            <div
+              onClick={() => {
+                setDots(!dots);
+              }}
+              className="dots-block"
+            >
+              <ul>
+                <li
+                  onClick={() => {
+                    props.delete(props.data.id);
+                  }}
+                >
+                  {" "}
+                  Delete
+                </li>
+                <li
+                  onClick={() => {
+                    props.update(props.data.id,props.body);
+                  }}
+                >
+                  update
+                </li>
+              </ul>
             </div>
           )}
         </div>
