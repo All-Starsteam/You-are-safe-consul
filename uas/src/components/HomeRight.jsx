@@ -5,7 +5,12 @@ const Topics=['violence','rape','hei','hiiii']
 
 
       return (
-      <div><div><img className="image-right" src={allone} alt=''/>
+      <div>
+       
+        <button className='btn-copmlain'>Create Complain</button>
+        <div className='line'></div>
+        <div><img className="image-right" src={allone} alt=''/>
+        <div className='line'></div>
         <div className="hashtags">  
           {Topics.map((e, i) => (
             <button onClick={()=>{props.getAllTopics(e)}} >#{e}</button>
