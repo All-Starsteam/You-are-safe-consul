@@ -9,7 +9,7 @@ const AllComplains = (props) => {
      <> 
    {props.data.map((e,i)=>(
      
-     <ComplainDetails data={e} key={i} />
+     <ComplainDetails  data={e} key={i} />
     
    ))}
     </>

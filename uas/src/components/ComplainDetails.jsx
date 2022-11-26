@@ -6,7 +6,7 @@ const ComplainDetails = (props) => {
   <div >
       <div >{props.data.topic}</div>
       <div>
-        <span > {props.data.username} </span>
+        <span className="usrname" > {props.data.username} </span>
         {props.data.topic}
       </div>
       <div > {props.data.content} </div>
