@@ -1,17 +1,46 @@
 import React from "react";
 import { useEffect, useState } from "react";
-import AllComplains from "./components/AllComplains.jsx";
+import HomeRight from "../src/components/HomeRight.jsx";
 import CreateComplain from "./components/CreateComplain.jsx";
 import Home from './components/HomeLeft.jsx'
 import { AiOutlineMenu, AiOutlineClose,AiOutlineSearch } from "react-icons/ai";
 import quotes from "./images/quotes1.png";
 import axios from "axios";
-<<<<<<< HEAD
 import "./index.css";
 
 let App = () => {
   // show and hide menu
   var [menu, setMenu] = useState(true);
+  const [view, setView] = useState("AllComplains");
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    axios.get("http://localhost:4000/api/posts").then((res) => {
+      setData(res.data);
+    });
+  }, []);
+  const upVotes=(id)=>{
+    axios.put(`http://localhost:4000/api/updateupvotes/${id}`);
+
+  }
+  const getAllTopics=(topic)=>{
+     axios.get(`http://localhost:4000/api/gettopic/${topic}`).then((res) => {
+       setData(res.data);
+     });
+  }
+  const deleteData = (id) => {
+    axios.delete(`http://localhost:4000/api/${id}`);
+  };
+  const update = (id, post) => {
+    axios.put(`http://localhost:4000/api/update/${id}`, post);
+  };
+  
+  const addComplain = (complain) => {
+    axios
+      .post("http://localhost:4000/uas", complain)
+      .then((res) => console.log("passed"))
+      .catch((err) => console.log(err));
+  };
   var toggleMenu = () => {
     if (menu === true) {
       return (
@@ -83,7 +112,6 @@ let App = () => {
           {toggleMenu()}
         </nav>
       </header>
-
       <main></main>
       {/* second navabar */}
       <header className="l-header2">
@@ -114,137 +142,23 @@ let App = () => {
               <div className="nav_link2"> Help</div>
             </li>
             <div class="wrap">
-   <div class="search">
-      <input type="text" class="searchTerm" placeholder="search" />
-      <button type="submit" class="searchButton">
-       <AiOutlineSearch />
-     </button>
-   </div>
-</div>
+              <div class="search">
+                <input type="text" class="searchTerm" placeholder="search" />
+                <button type="submit" class="searchButton">
+                  <AiOutlineSearch />
+                </button>
+              </div>
+            </div>
           </ul>
         </nav>
       </header>
-{/* Home page */}
-<Home />
+      {/* Home page */}
+      <div className='grid-container'>
+      <Home data={data} upVotes={upVotes}/> 
+      <HomeRight getAllTopics={getAllTopics} /></div>
       <footer></footer>
     </div>
   );
-=======
-
-import "./App.css";
-
-let App = () => {
-  const [view, setView] = useState("AllComplains");
-  const [data, setData] = useState([]);
-
-  useEffect(() => {
-    axios.get("http://localhost:4000/api/posts").then((res) => {
-      setData(res.data);
-    });
-  }, []);
-  const deleteData = (id) =>{
-    axios.delete(`http://localhost:4000/api/${id}`);
-  }
-  const update=(id,post)=>{
-    axios.put(`/api/update/${id}`,post)
-  }
-
-  const changeView = (newview) => {
-    setView(newview);
-  };
-  const addComplain = (complain) => {
-
-    console.log(complain);
-    axios
-      .post("", complain)
-      .then((res) => console.log("passed"))
-      .catch((err) => console.log(err));
-  };
-  return (
-    <>
-          <div>
-        <nav className=" nav">
-          <div
-            className={
-              view !== "createcomplain"
-                ? "nav-unselected"
-                : "nav-selected"
-            }
-            onClick={() => {
-              setView("createcomplain");
-            }}
-          >
-            Create Post
-          </div>
-          <div
-            className={
-              view === "allcomplains" ? "nav-selected" : "nav-unselected"
-            }
-            onClick={() => {
-              setView("allcomplains");
-              // console.log(this.state)
-            
-            }}
-          >
-            All Posts
-          </div>
-         
-        </nav>
-
-      </div>
-  
-      {view === "AllComplains" && (
-        <AllComplains data={data} changeView={changeView} />
-      )}
-      {view === "OneComplain" && <OneComplain />}
-      {view === "createComplain" && (
-        <CreateComplain addComplain={addComplain} />
-      )}
-    </>
-  );
-=======
-    axios
-      .post("http://localhost:4000/uas", complain)
-      .then((res) => console.log("passed"))
-      .catch((err) => console.log(err));
-  };
-  if (view === "AllComplains") {
-    return (
-      <div style={{ display: "flex" }}>
-        <div>
-          <AllComplains data={data} changeView={changeView} delete={deleteData} update={update} />
-        </div>
-        <button
-          style={{
-            height: "35px",
-            width: "100px",
-            position: "relative",
-            top: "100px",
-            left: "200px",
-          }}
-          onClick={() => {
-            changeView("add");
-          }}
-        >
-          add complain
-        </button>
-        <div style={{ display: "flex", position: "relative", top: "200px" }}>
-          <button style={{ height: "35px", width: "100px" }}>rape</button>
-          <button style={{ height: "35px", width: "100px" }}> violence</button>
-          <br />
-          <button style={{ height: "35px", width: "100px" }}>
-            harrassement
-          </button>
-          <button style={{ height: "35px", width: "100px" }}> brakage</button>
-        </div>
-      </div>
-    );
-  }
-  if (view === "add") {
-    return <CreateComplain addComplain={addComplain} />;
-  }
-
->>>>>>> 647bb8c7b0d8d4e0998a99dc62547561210d5072
 };
 
 export default App;
