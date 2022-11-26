@@ -547,9 +547,9 @@ html {
     color: #fdfdfd;
 
 }
-.form {
+#complain {
     background-color: #fff;
-    max-width: 500px;
+    max-width: auto;
     margin: 50px auto;
     padding: 30px 20px;
     box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
@@ -953,7 +953,6 @@ html {
   margin: 5px;
   box-shadow: rgba(0, 0, 0, 0.075) 0px 2px 4px 0px;
   }
-
   .grid-container {
       display: grid;
       grid-template-areas:
@@ -964,4 +963,4 @@ html {
       padding: 10px;
   }
 
-
+ 
