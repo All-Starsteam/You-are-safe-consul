@@ -28,18 +28,11 @@ let gouver=mongoose.Schema({
 })
 let users = mongoose.Schema({
   username: String,
-  
-  password: String,
-  points: Number
 
-  
+  password: String,
+  points: { type: Number, default: 200, require: false },
 });
-let save = (repo) => {
-  Repo.create(repo).then(
-    console.log(repo,'created')
-  ).catch(err=>console.log(err))
-  
-};
+
 let government = mongoose.model("government",gouver);
 let post = mongoose.model("posts", postSchema);
 let user = mongoose.model("users", users);
