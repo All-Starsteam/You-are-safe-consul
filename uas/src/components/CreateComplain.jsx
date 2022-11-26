@@ -106,6 +106,7 @@ console.log(email)
           id="submit"
           onClick={() => {
             props.addComplain({ email:email, placement:location, topic:topic, content:content });
+            props.changeView("")
           }}
         >
           Submit

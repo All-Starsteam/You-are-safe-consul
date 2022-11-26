@@ -56,10 +56,7 @@ body {
 html {
     font-size: calc(0.25em + Max(0.75em, 0.75vw));
 }
-html {
-    line-height: 1.15;
-    -webkit-text-size-adjust: 100%;
-}
+
 *::selection, * *::selection {
     background-color: #004a83;
     color: #fdfdfd;
@@ -146,10 +143,7 @@ html {
     box-sizing: border-box;
     font-size: 100%;
 }
-html {
-    line-height: 1.15;
-    -webkit-text-size-adjust: 100%;
-}
+
 .public>.wrapper>header>*::before, .proposal-dashboard>header>*::before {
     bottom: 0;
     content: "";
@@ -275,10 +269,7 @@ html {
     box-sizing: border-box;
     font-size: 100%;
 }
-html {
-    line-height: 1.15;
-    -webkit-text-size-adjust: 100%;
-}
+
 *, *::before, *::after {
     -webkit-box-sizing: inherit;
     box-sizing: inherit;
@@ -404,10 +395,7 @@ html {
     box-sizing: border-box;
     font-size: 100%;
 }
-html {
-    line-height: 1.15;
-    -webkit-text-size-adjust: 100%;
-}
+
 *, *::before, *::after {
     -webkit-box-sizing: inherit;
     box-sizing: inherit;
@@ -519,10 +507,7 @@ html {
     box-sizing: border-box;
     font-size: 100%;
 }
-html {
-    line-height: 1.15;
-    -webkit-text-size-adjust: 100%;
-}
+
 .public>.wrapper>header>*::before, .proposal-dashboard>header>*::before {
     bottom: 0;
     content: "";
@@ -702,7 +687,7 @@ html {
   .nav_linksignUp{
     background-color: white;
     height: 30px;
-    width: fit-content;
+    /* width: fit-content; */
     border-radius: 5px;
     padding: 5px;
   }
@@ -720,7 +705,7 @@ html {
           height: 100%;
           padding:3.5rem 1.5rem 0;
           background-color: #004a83;
-          backdrop-filter: blur(10px);
+          /* backdrop-filter: blur(10px); */
           transition: .5;
       }
       .nav_toggle{
@@ -874,6 +859,7 @@ html {
   /* Home page  cards*/
   .card{
     display: flex;
+    flex-direction: column;
   }
   .post-card {
     margin-top:20px;
@@ -968,6 +954,14 @@ html {
   box-shadow: rgba(0, 0, 0, 0.075) 0px 2px 4px 0px;
   }
 
-/* .overflow{
-    overflow-y: hidden;
-} */
+  .grid-container {
+      display: grid;
+      grid-template-areas:
+          'header header header header header header'
+          'menu main main main right right'
+          'menu footer footer footer footer footer';
+      gap: 10px;
+      padding: 10px;
+  }
+
+
