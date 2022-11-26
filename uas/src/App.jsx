@@ -1,6 +1,6 @@
 import React from "react";
 import { useEffect, useState } from "react";
-import AllComplains from "./components/AllComplains.jsx";
+import HomeRight from "../src/components/HomeRight.jsx";
 import CreateComplain from "./components/CreateComplain.jsx";
 import Home from './components/HomeLeft.jsx'
 import { AiOutlineMenu, AiOutlineClose,AiOutlineSearch } from "react-icons/ai";
@@ -11,6 +11,36 @@ import "./index.css";
 let App = () => {
   // show and hide menu
   var [menu, setMenu] = useState(true);
+  const [view, setView] = useState("AllComplains");
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    axios.get("http://localhost:4000/api/posts").then((res) => {
+      setData(res.data);
+    });
+  }, []);
+  const upVotes=(id)=>{
+    axios.put(`http://localhost:4000/api/updateupvotes/${id}`);
+
+  }
+  const getAllTopics=(topic)=>{
+     axios.get(`http://localhost:4000/api/gettopic/${topic}`).then((res) => {
+       setData(res.data);
+     });
+  }
+  const deleteData = (id) => {
+    axios.delete(`http://localhost:4000/api/${id}`);
+  };
+  const update = (id, post) => {
+    axios.put(`http://localhost:4000/api/update/${id}`, post);
+  };
+  
+  const addComplain = (complain) => {
+    axios
+      .post("http://localhost:4000/uas", complain)
+      .then((res) => console.log("passed"))
+      .catch((err) => console.log(err));
+  };
   var toggleMenu = () => {
     if (menu === true) {
       return (
@@ -82,7 +112,6 @@ let App = () => {
           {toggleMenu()}
         </nav>
       </header>
-
       <main></main>
       {/* second navabar */}
       <header className="l-header2">
@@ -113,18 +142,20 @@ let App = () => {
               <div className="nav_link2"> Help</div>
             </li>
             <div class="wrap">
-   <div class="search">
-      <input type="text" class="searchTerm" placeholder="search" />
-      <button type="submit" class="searchButton">
-       <AiOutlineSearch />
-     </button>
-   </div>
-</div>
+              <div class="search">
+                <input type="text" class="searchTerm" placeholder="search" />
+                <button type="submit" class="searchButton">
+                  <AiOutlineSearch />
+                </button>
+              </div>
+            </div>
           </ul>
         </nav>
       </header>
-{/* Home page */}
-<Home />
+      {/* Home page */}
+      <div className='grid-container'>
+      <Home data={data} upVotes={upVotes}/> 
+      <HomeRight getAllTopics={getAllTopics} /></div>
       <footer></footer>
     </div>
   );
