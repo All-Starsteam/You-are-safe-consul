@@ -1,3 +1,4 @@
+
 import React from 'react'
 
 import allone from '../images/allOne.png'
@@ -30,3 +31,4 @@ const Topics=['violence','rape','hei','hiiii']
 
 
 export default HomeRight
+
