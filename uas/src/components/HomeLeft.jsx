@@ -5,7 +5,7 @@ var HomeLeft = (props) => {
   return (
     <div className="card">
       {props.data.map((e, i) => (
-        <ComplainDetails data={e} upVotes={props.upVotes} key={i} />
+        <ComplainDetails data={e} update={props.update} delete={props.deleteData} upVotes={props.upVotes} key={i} />
       ))}
 
      
