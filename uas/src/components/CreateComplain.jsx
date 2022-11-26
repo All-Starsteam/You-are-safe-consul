@@ -79,12 +79,14 @@ console.log(email)
           }}
           id="role"
         >
-          <option value="omestic Violence">Domestic Violence </option>
+          <option value="Domestic Violence">Domestic Violence </option>
           <option value="Sexual Violence">Sexual Violence</option>
           <option value="harassment and stalking">
             harassment and stalking
           </option>
           <option value="Racism/Sexism">Racism/Sexism</option>
+          <option value="Minor Abuse">Minor Abuse</option>
+          <option value="Anti-Establishment">Anti-Establishment</option>
         </select>
         <div class="form-control">
           <label for="complain">your complaints</label>
@@ -104,6 +106,7 @@ console.log(email)
           id="submit"
           onClick={() => {
             props.addComplain({ email:email, placement:location, topic:topic, content:content });
+            props.changeView("")
           }}
         >
           Submit
