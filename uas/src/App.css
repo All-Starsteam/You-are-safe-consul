@@ -560,8 +560,8 @@ html {
 *::selection, * *::selection {
     background-color: #004a83;
     color: #fdfdfd;
-=======
 
+}
 .form {
     background-color: #fff;
     max-width: 500px;
@@ -611,5 +611,5 @@ html {
 .text-field {
     min-height: 100px;
     max-width: 90.6%;
->>>>>>> 647bb8c7b0d8d4e0998a99dc62547561210d5072
+
 }
