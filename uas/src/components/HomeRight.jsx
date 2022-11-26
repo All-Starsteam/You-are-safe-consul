@@ -14,9 +14,20 @@ var HomeRight = (props) => {
     }
   };
 
-  return (
-    <div>
-      <button className="btn-copmlain" onClick={()=>{
+import allone from '../images/allOne.png'
+var HomeRight = (props) =>{
+const Topics = [
+  "Bullying",
+  "Racism/Sexism",
+  "Sexual Violence",
+  "Domestic Violence ",
+];
+
+      return (
+      <div>
+       
+        <button className='btn-copmlain' onClick={()=>{
+
         props.changeView('create')
         console.log('create');
            }}>Create Complain</button>

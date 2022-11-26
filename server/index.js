@@ -51,7 +51,7 @@ app.get("/api/posts", (req, res) => {
     }
   });
 });
-app.delete("/api/:id", (req, res) => {
+app.delete("/api/delete/:id", (req, res) => {
   post.deleteOne({ _id: req.params.id }, (err, result) => {
     if (err) {
       res.json(err);

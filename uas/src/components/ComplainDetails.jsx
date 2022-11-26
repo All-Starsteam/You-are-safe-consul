@@ -28,10 +28,11 @@ const ComplainDetails = (props) => {
               <ul>
                 <li
                   onClick={() => {
-                    props.delete(props.data.id);
+                    props.delete(props.data._id);
+                    window.location.reload();
                   }}
                 >
-                  {" "}
+                  
                   Delete
                 </li>
                 <li

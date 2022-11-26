@@ -85,6 +85,7 @@ console.log(email)
             harassment and stalking
           </option>
           <option value="Racism/Sexism">Racism/Sexism</option>
+ 
           <option value="Minor Abuse">Minor Abuse</option>
           <option value="Anti-Establishment">Anti-Establishment</option>
         </select>
@@ -105,8 +106,13 @@ console.log(email)
         <button
           id="submit"
           onClick={() => {
-            props.addComplain({ email:email, placement:location, topic:topic, content:content });
-            props.changeView("")
+            props.addComplain({
+              email: email,
+              placement: location,
+              topic: topic,
+              content: content,
+            });
+            props.changeView("");
           }}
         >
           Submit
