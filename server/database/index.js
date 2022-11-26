@@ -11,6 +11,7 @@ mongoose
 
 let postSchema = mongoose.Schema({
     username:{type:String,default:'annonymous',require :false,},
+    email:String,
     topic:{type:String,require :true,} ,
     
     content:{type:String,require :true,},

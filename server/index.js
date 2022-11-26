@@ -69,6 +69,34 @@ app.put(`/api/update/:id`, (req, res) => {
     }
   });
 });
+app.put("/api/updateupvotes/:id", (req, res) => {
+
+
+    post.findOneAndUpdate(
+      { _id: req.params.id },
+      { $inc: { upVote: 1 } },
+      (err, result) => {
+        if (err) {
+          res.json(err);
+        } else {
+          res.json(result);
+        }
+      }
+    );
+  })
+  app.put("/api/updatedownvotes/:id", (req, res) => {
+    post.findOneAndUpdate(
+      { _id: req.params.id },
+      { $inc: { downVote: 1 } },
+      (err, result) => {
+        if (err) {
+          res.json(err);
+        } else {
+          res.json(result);
+        }
+      }
+    );
+  });
 app.listen(PORT, () => {
   console.log(`server connected to localhost:${PORT}`);
 });
