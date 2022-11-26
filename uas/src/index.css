@@ -1,171 +1,352 @@
-@import url("https://fonts.googleapis.com/css?family=Francois+One|PT+Serif:400,400i,700,700i");
+:root{
+  --header-height: 9rem;
+  /* colors  */
+  --first-color:#EEEDE7;
+  --first-color-dark:#B9B7BD;
+  --first-color-darken:#868B8E;
+  --white-color:rgb(41, 20, 20);
+  /* font and typography */
+  --body-font:"Poppins";
+  --big-font-size:2.5rem;
+  --normal-font-size: .938rem;
+  /* z index */
+  --z-fixed:100;
 
-body {
-  margin: 0px;
-  color: #2c3e50;
-  background-color: #ecf0f1;
-  font-size: 1.1em;
+
 }
 
-.main {
-  width: 590px;
-  margin: auto;
-  margin-top: 10px;
-  text-align: center;
-  border: 1px solid #77777769;
-  background-color: #fdfdfd;
-  box-shadow: 0 0 1em #80808066;
-  border-radius: 4px;
+@media screen and (min-width: 768px) {
+    :root{
+        --big-font-size:5rem;
+        --normal-font-size: 1rem;
+    }
+    
+}
+/* Base */
+*,::before,::after{
+    box-sizing: border-box;
 }
 
-.main h1 {
-  font-family: "Francois One";
-  margin-top: 0;
-  font-size: 35px;
-  margin-bottom: 20px;
-  padding: 5px;
-  color: #2c3e50;
+body{
+    margin: var(--header-height) 0 0 0;
+    padding: 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    font-weight: 500;
+    background: #f2f2f2;
+
 }
 
-form {
-  display: grid !important;
+h1,p,ul{
+    margin:0;
 }
 
-form input[type="text"] {
-  width: 400px;
-  font-size: 12px;
-  padding: 5px;
-  border-radius: 4px;
-  border-width: 1px;
-  margin-bottom: 1%;
+.nav_list{
+    list-style: none;
+    display: flex;
+    padding-top: 1.3rem;
+   float: right; 
+
 }
 
-form button {
-  width: 30%;
-  background-color: #2c3e50;
-  color: white;
-  border-radius: 4px;
+/* LAYOUT */
+.bd-grid{
+    margin-left: 3rem;
+    margin-right: 2rem;
 }
 
-form textarea {
-  width: 100%;
-  height: 150px;
-  font-size: 12px;
-  margin-top: 2px;
-  resize: none;
-  border-radius: 4px;
+.l-header{
+    width: 100%;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index:var(--z-fixed);
+    background-color: #004a83;
+
+}
+ 
+/* nav */
+.nav{
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
 }
 
-.post {
-  width: 400px;
-  font-size: 12px;
-  padding: 5px;
-  border-radius: 4px;
-  border-width: 1px;
-  margin-bottom: 1%;
+.nav_toggle{
+    opacity: 0.0;
+
+}
+.nav_close{
+    opacity: 0.0;
 }
 
-.blog-list-item {
-  width: 590px;
-  min-height: 250px;
-  margin: auto;
-  margin-top: 10px;
-  border: 1px solid #77777769;
-  background-color: #fdfdfd;
-  border-radius: 4px;
-  padding: 20px 60px;
-  box-shadow: 0 0 1em #80808066;
-}
-
-.blog-list-item-image {
-  float: left;
-  width: 100%;
-  max-width: 350px;
-  height: 100%;
-  margin-right: 20px;
-  margin-bottom: 5%;
-}
-
-.blog-list-item-title {
-  font-size: 35px;
-  font-family: "Francois One";
-  margin-bottom: 10px;
-}
-
-.blog-list-item-lede {
-  display: block;
-  margin-bottom: 50px;
-}
-
-.blog-list-item-lede img {
-  width: 100%;
-}
-
-.blog-list-item-byline {
-  font-size: 0.8em;
-  margin-bottom: 15px;
-  color: #777777;
-}
-
-.blog-list-item-byline-author {
-  font-weight: bolder;
-}
-
-.blog {
-  padding: 0px 10% 0px 10%;
-}
-
-.nav {
-  background-color: #2c3e50;
-  margin: 0px;
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-family: "Francois One";
-}
-
-.search {
-  width: 200px;
+.nav_linksignUp{
+  background-color: white;
   height: 30px;
-  border-radius: 4px;
-  border-width: 0px;
-  font-family: "Francois One";
+  width: fit-content;
+  border-radius: 5px;
+  padding: 5px;
 }
+
+.nav_linksignIn{
+  padding-top: 2px;
+  color: white;
+}
+@media screen and (max-width: 600px) {
+    .nav_menu{
+        position:fixed;
+        top:0;
+        right: 100%;
+        width: 70%;
+        height: 100%;
+        padding:3.5rem 1.5rem 0;
+        background-color: #004a83;
+        backdrop-filter: blur(10px);
+        transition: .5;
+    }
+    .nav_toggle{
+        opacity: 0.9;
+    }
+    .nav_close{
+        opacity: 0.9;
+    }
+    ul{
+        padding:0;
+        list-style: none;
+        display:block ;
+        padding-top: 1.3rem;
+    }
+    
+    li{
+        padding-left: 5rem;
+    
+    }
+}
+
+.nav_close{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    font-size:1.5rem;
+    cursor: pointer;
+}
+
+.nav_item{
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+}
+
+.nav_close, .nav_link, .nav_logo ,.nav__toggle{
+    color: white;
+}
+
+.nav_link:hover{
+    color:white;
+}
+
+.nav_toggle{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.show{
+    right: 0;
+}
+.navs{
+  display: block;
+}
+
+
+
+
+/* second navbar  */
+
+.l-header2{
+  width: 100%;
+  top:0;
+  left: 0;
+  z-index:var(--z-fixed);
+  background-color: white;
+  border-bottom: 1px rgba(116, 113, 113, 0.421) solid;
+  height: 70px;
+  margin-bottom: 80px;
+  
+}
+
+
+.nav_item2{
+  margin-bottom: 5rem;
+  margin-left: 1rem;
+
+}
+
+.nav_list2{
+  list-style: none;
+  display: flex;
+  padding-top: 1.3rem;
+  float: left;
+  font-weight: bold;
+  font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif !important;
+  margin-left: 350px;
+
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+
+.wrap{
+  margin-left: 70px;
+}
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 1px solid gray;
+  border-right: none;
+  padding: 5px;
+  height: 25px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+
 
 .searchButton {
-  width: 70px;
-  height: 30px;
-  border-radius: 4px;
-  background-color: #777777;
-  color: white;
-  font-family: "Francois One";
+  width: 40px;
+  height: 25px;
+  border: 1px solid #c9d6d8;
+  background: #dee0e3;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
   cursor: pointer;
+  font-size: 20px;
+  color: black;
 }
 
-.logo {
+
+
+/* consul icon */
+.consul-header{
+  color: white;
+  font-size: 3.825rem;
+  font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif !important;
+}
+
+.quote-header{
+  width: 60px;
+  height: 50px;
+  
+}
+
+
+
+.option{
+ Background:url('https://66.media.tumblr.com/f19901f50b79604839ca761cd6d74748/tumblr_o65rohhkQL1qho82wo1_1280.jpg');
+}
+
+
+/* Home page  cards*/
+.card{
+  display: flex;
+}
+.post-card {
+  margin-top:20px;
+  width: 900px;
+  height: 300px;
+  background-color: rgba(255, 255, 255, 0.981);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  margin-left: 20rem;
+  cursor: pointer;
+  
+}
+
+.avatar-user{
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+  margin-left: 30px
+}
+
+.name-image{
+
+  display:flex;
+}
+.name-user{
+  padding-top: 20px;
   font-weight: bold;
-  font-size: 1.9em;
+
+}
+
+.post-content{
+  padding: 15px;
+  margin-left: 2rem;
+  font-weight: 300;
+  width: 500px;
+  font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif !important;
+  line-height: 1.625rem;
+  overflow:hidden;
+  display: inline-block;
+  height: 200px;
+
+}
+
+.post-card:hover{
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+.content-vote{
+  display: flex;
+}
+.help{
+margin-left: 90px;
+margin-top: 70px;
+width: 100px;
+height: 100px;
+cursor: pointer;}
+
+.votes{
+  font-size: 80px;
+  font-weight: bold;
+  margin-top: 70px;
   margin-left: 10px;
-  font-family: "Francois One";
-  color: #ffffff;
-  cursor: pointer;
+  display: block;
+  float: right;
+  font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif !important;
+
 }
 
-.nav-selected {
-  padding: 5px;
-  color: white;
-  font-weight: bold;
-  margin-right: 5px;
-  font-size: 1.1em;
-  cursor: pointer;
+
+/* right side of home */
+
+
+.image-right{
+  width:  250px;
+  height: 250px;
+  margin-left: 200px;
+  margin-top: 15px;
+  opacity: 0.8;
+  margin-bottom: 20px;
 }
 
-.nav-unselected {
-  padding: 5px;
-  margin-right: 5px;
-  color: grey;
-  font-size: 1.1em;
-  cursor: pointer;
+.hashtags{
+width: 300px;
+height: fit-content;
+margin-left: 200px;
+
 }
 
+.hashtags button{
+  background-color: white;
+  border: none;
+padding: 10px;
+margin: 5px;
+box-shadow: rgba(0, 0, 0, 0.075) 0px 2px 4px 0px;
+}
